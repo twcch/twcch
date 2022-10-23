@@ -6,7 +6,7 @@
 
 歡迎來到我的Github頁面!!
 
-我是Alan，我是一位獨立開發者。擅長使用Java及Spring framework進行開發。
+我是Alan，我是一位獨立開發者，也是一個作家。擅長使用Java及Spring framework進行開發。
 
 * 我的技術部落格(維修中)
 
