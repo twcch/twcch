@@ -27,6 +27,11 @@
 * [資料庫] MySQL
 * [其他] JUnit5/Git/Maven/RESTful/Web MVC/Web MVVM
 
+#### 我擅長的工具:
+* [MS Office] Excel VBA/Excel/Access/Word/PowerPoint
+* [IDE] Intellij IDEA/WebStorm/DataGrip
+* [中╱英文打字] 約60字/分
+
 #### 我擅長的開源系統:
 * [PHP] WordPress+WooCommerce
 * [PHP] Discuz!
