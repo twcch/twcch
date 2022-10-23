@@ -20,10 +20,10 @@
 
 #### 我擅長的技能:
 * [後端] Java SE/Java EE
-* [後端框架] Spring Boot/Spring JDBC/Spring Data JPA
+* [後端-框架] Spring Boot/Spring JDBC/Spring Data JPA
 * [前端] HTML5/CSS3/JavaScript
-* [前端框架] Vuejs
-* [前端UI] BootstrapVue/Semantic UI
+* [前端-框架] Vuejs
+* [前端-UI] BootstrapVue/Semantic UI
 * [資料庫] MySQL
 * [其他] JUnit5/Git/Maven/RESTful/Web MVC/Web MVVM
 
