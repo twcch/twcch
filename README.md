@@ -1,5 +1,9 @@
 ### Hi there
 
+[![Github](https://img.shields.io/badge/-Github-000?style=flat&logo=Github&logoColor=white)](https://github.com/twcch)
+[![Linkedin](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/twcch/)
+[![Gmail](https://img.shields.io/badge/-Gmail-c14438?style=flat&logo=Gmail&logoColor=white)](mailto:twcch1218@gmail.com)
+
 歡迎來到我的Github頁面!!
 
 我是Alan，我是一位獨立開發者。擅長使用Java及Spring framework進行開發。
@@ -31,9 +35,4 @@
 #### 我擅長的開源系統:
 * [PHP] WordPress+WooCommerce
 * [PHP] Discuz!
-
-[![Github](https://img.shields.io/badge/-Github-000?style=flat&logo=Github&logoColor=white)](https://github.com/twcch)
-[![Linkedin](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/twcch/)
-[![Gmail](https://img.shields.io/badge/-Gmail-c14438?style=flat&logo=Gmail&logoColor=white)](mailto:twcch1218@gmail.com)
-
 
