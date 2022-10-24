@@ -22,18 +22,26 @@
 
 #### 我擅長的技能:
 
-* [後端] Java SE/Java EE
-* [後端-框架] Spring Boot/Spring JDBC/Spring Data JPA
-* [前端] HTML5/CSS3/JavaScript
-* [前端-框架] Vuejs
-* [前端-UI] BootstrapVue/Semantic UI
-* [資料庫] MySQL
-* [其他] JUnit5/Git/Maven/RESTful/Web MVC/Web MVVM
+<div class="table-container">
+  <table>
+    <tr><th>項目</th><th>描述</th>
+    <tr><td>後端</td><td>Java / Spring Boot / Spring JDBC / Spring Data JPA</td>
+    <tr><td>前端</td><td>HTML / CSS / JavaScript / Vuejs</td>
+    <tr><td>資料庫</td><td>MySQL</td>
+    <tr><td>其他</td><td>JUnit5 / Git / Maven / RESTful / Web MVC / Web MVVM</td>
+  </table>
+</div>
 
 #### 我擅長的工具:
 
-* [MS Office] Excel VBA/Excel/Access/Word/PowerPoint
-* [IDE] Intellij IDEA/WebStorm/DataGrip
+<div class="table-container">
+  <table>
+    <tr><th>項目</th><th>描述</th>
+    <tr><td>MS Office</td><td>Excel VBA / Excel / Access / Word / PowerPoint</td>
+    <tr><td>IDE</td><td>Intellij / eclipse</td>
+    <tr><td>中/英文打字</td><td>約60字/分</td>
+  </table>
+</div>
 
 #### 我擅長的開源系統:
 
