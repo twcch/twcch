@@ -25,7 +25,7 @@
 <div class="table-container">
   <table>
     <tr><th>項目</th><th>描述</th>
-    <tr><td>後端</td><td>Java / Spring Boot / Spring JDBC / Spring Data JPA</td>
+    <tr><td>後端</td><td>Java / Spring Boot / Spring Data JDBC / Spring Data JPA</td>
     <tr><td>前端</td><td>HTML / CSS / JavaScript / Vuejs</td>
     <tr><td>資料庫</td><td>MySQL</td>
     <tr><td>其他</td><td>JUnit5 / Git / Maven / RESTful / Web MVC / Web MVVM</td>
