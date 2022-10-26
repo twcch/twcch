@@ -6,7 +6,9 @@
 
 歡迎來到我的Github頁面!!
 
-我是Alan，我是一位獨立開發者、文字創作者。擅長使用Java及Spring framework進行開發。
+ > 成功不是靠天賦，靠的是努力與熱忱。
+
+我是Alan，我是一個非常喜還寫程式、熱衷於學習新技術的人。擅長使用Java及Spring framework進行開發。
 
 * 我的技術部落格: [Alan's blog](https://twcch.github.io/)
 
