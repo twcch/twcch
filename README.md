@@ -29,7 +29,7 @@
 
 #### 我擅長的工具:
 
-* [MS Office] Excel VBA / Excel / Access / Word / PowerPoint
+* [MS Office] Excel VBA / Excel / Access / Word / PowerPoint / Visio
 * [IDE] Intellij / eclipse
 * [中/英文打字] 約60字/分
 
