@@ -24,7 +24,7 @@
 * 個人部落格(全端): [[Github連結]](https://github.com/twcch/java-web-blog)
 * 簡易商城(後端): [[Github連結]](https://github.com/twcch/java-web-shop-backend)
 
-#### 我目前在Fubon Life從事的工作:
+#### 我目前在Fubon Life從事的工作: (總年資約3年)
 
 * 商業分析(Business Analysis)
 
