@@ -46,6 +46,6 @@
 
 #### 我擅長的開源系統:
 
-* [PHP] WordPress+WooCommerce
+* [PHP] WordPress + WooCommerce
 * [PHP] Discuz!
 
