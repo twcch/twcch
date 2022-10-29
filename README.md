@@ -15,7 +15,7 @@
 * [後端] Java / Spring Boot / Spring Data JPA / Spring Data JDBC / Thymeleaf
 * [前端] HTML / CSS / JavaScript / Vuejs / Semantic UI
 * [資料庫] MySQL
-* [其他] JUnit5 / Git / Maven / RESTful / Web MVC / Web MVVM
+* [其他] JUnit5 / Git / Maven / RESTful / Web MVC / Web MVVM / AWS / GCP
 
 自述: 我擅長使用Java+Spring Boot+Spring Data JPA+Thymeleaf開發網站後端，前端比較擅長使用熱門UI框架進行建置。
 
@@ -28,17 +28,11 @@
 
 * 商業分析(Business Analysis)
 
-#### 我擅長的技能:
-
-* [後端] Java / Spring Boot / Spring Data JPA / Spring Data JDBC / Thymeleaf
-* [前端] HTML / CSS / JavaScript / Vuejs / Semantic UI
-* [資料庫] MySQL
-* [其他] JUnit5 / Git / Maven / RESTful / Web MVC / Web MVVM
-
 #### 我擅長的工具:
 
 * [MS Office] Excel VBA / Excel / Access / Word / PowerPoint / Visio
-* [IDE] Intellij / eclipse
+* [IDE] Intellij / eclipse / VSCode
+* [雲端空間] AWS / GCP / Shared web hosting
 * [中/英文打字] 約60字/分
 
 #### 我目前正在進行的挑戰:
