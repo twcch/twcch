@@ -8,9 +8,21 @@
 
  > 成功不是靠天賦，靠的是努力與熱忱。
 
-我是Alan，我是一個非常喜還寫程式、熱衷於學習新技術的人。擅長使用Java及Spring framework進行開發。
+我是志謙(Alan)，我是一個非常喜還寫程式、熱衷於學習新技術的人。擅長使用Java及Spring framework進行開發。
 
-* 我的技術部落格: [Alan's blog](https://twcch.github.io/)
+#### 我擅長的技能:
+
+* [後端] Java / Spring Boot / Spring Data JPA / Spring Data JDBC / Thymeleaf
+* [前端] HTML / CSS / JavaScript / Vuejs / Semantic UI
+* [資料庫] MySQL
+* [其他] JUnit5 / Git / Maven / RESTful / Web MVC / Web MVVM
+
+自述: 我擅長使用Java+Spring Boot+Spring Data JPA+Thymeleaf開發網站後端，前端比較擅長使用熱門UI框架進行建置。
+
+#### 我的作品:
+
+* [個人部落格(全端)] [Github連結](https://github.com/twcch/java-web-blog)
+* [簡易商城(後端)] [Github連結](https://github.com/twcch/java-web-shop-backend)
 
 #### 我目前在Fubon Life從事的工作:
 
