@@ -1,9 +1,10 @@
 ### Hi there
 
+[![Blog](https://img.shields.io/badge/-Blog-blueviolet?style=flat&logo=Blog&logoColor=white)](https://leetcode.com/twcch1218/)
 [![Github](https://img.shields.io/badge/-Github-000?style=flat&logo=Github&logoColor=white)](https://github.com/twcch)
 [![Linkedin](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/twcch/)
 [![LeetCode](https://img.shields.io/badge/-LeetCode-yellow?style=flat&logo=LeetCode&logoColor=white)](https://leetcode.com/twcch1218/)
-[![StackOverflow](https://img.shields.io/badge/-StackOverflow-orange?style=flat&logo=LeetCode&logoColor=white)](https://stackoverflow.com/users/20167143/twcch1218)
+[![StackOverflow](https://img.shields.io/badge/-StackOverflow-orange?style=flat&logo=StackOverflow&logoColor=white)](https://stackoverflow.com/users/20167143/twcch1218)
 [![Gmail](https://img.shields.io/badge/-Gmail-c14438?style=flat&logo=Gmail&logoColor=white)](mailto:twcch1218@gmail.com)
 
 歡迎來到我的Github頁面!!
