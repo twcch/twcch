@@ -28,12 +28,6 @@
 
 * 商業分析(Business Analysis)
 
-#### 我目前正在進行的挑戰:
-
-* 每天Coding至少3個小時
-* 每週Coding至少30個小時
-* 我目前正在進行的專案: Java個人部落格
-
 #### 我擅長的技能:
 
 * [後端] Java / Spring Boot / Spring Data JPA / Spring Data JDBC / Thymeleaf
@@ -46,6 +40,12 @@
 * [MS Office] Excel VBA / Excel / Access / Word / PowerPoint / Visio
 * [IDE] Intellij / eclipse
 * [中/英文打字] 約60字/分
+
+#### 我目前正在進行的挑戰:
+
+* 每天Coding至少3個小時
+* 每週Coding至少30個小時
+* 我目前正在進行的專案: Java個人部落格
 
 #### 我擅長的開源系統:
 
