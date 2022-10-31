@@ -24,28 +24,29 @@
 
 #### 我的作品:
 
-* 個人部落格(全端): [[Github連結]](https://github.com/twcch/java-web-blog)
-* 簡易商城(後端): [[Github連結]](https://github.com/twcch/java-web-shop-backend)
+1. 個人部落格(全端): [[Github連結]](https://github.com/twcch/java-web-blog)
+2. 簡易商城(後端): [[Github連結]](https://github.com/twcch/java-web-shop-backend)
 
 #### 我目前在Fubon Life從事的工作: (總年資約3年)
 
-* 商業分析(Business Analysis)
+1. 商業分析(Business Analysis)
+2. 使用者驗收測試(User Acceptance Testing; UAT)
 
 #### 我擅長的工具:
 
-* [MS Office] Excel VBA / Excel / Access / Word / PowerPoint / Visio
-* [IDE] Intellij / eclipse / VSCode
-* [雲端空間] AWS / GCP / Shared web hosting
-* [中/英文打字] 約60字/分
+1. [MS Office] Excel VBA / Excel / Access / Word / PowerPoint / Visio
+2. [IDE] Intellij / eclipse / VSCode
+3. [雲端空間] AWS / GCP / Shared web hosting
+4. [中/英文打字] 約60字/分
 
 #### 我目前正在進行的挑戰:
 
-* 每天Coding至少3個小時
-* 每週Coding至少30個小時
-* 我目前正在進行的專案: Java個人部落格
+1. 每天Coding至少3個小時
+2. 每週Coding至少30個小時
+3. 我目前正在進行的專案: Java個人部落格
 
 #### 我擅長的開源系統:
 
-* [PHP] WordPress + WooCommerce
-* [PHP] Discuz!
+1. [PHP] WordPress + WooCommerce
+2. [PHP] Discuz!
 
