@@ -16,9 +16,9 @@
 #### 我擅長的技能:
 
 1. [後端] Java / Spring Boot / Spring Data JPA / Spring Data JDBC / Thymeleaf
-* [前端] HTML / CSS / JavaScript / Vuejs / Semantic UI
-* [資料庫] MySQL
-* [其他] JUnit5 / Git / Maven / RESTful / Web MVC / Web MVVM
+2. [前端] HTML / CSS / JavaScript / Vuejs / Semantic UI
+3. [資料庫] MySQL
+4. [其他] JUnit5 / Git / Maven / RESTful / Web MVC / Web MVVM
 
 自述: 我擅長使用Java+Spring Boot+Spring Data JPA+Thymeleaf開發網站後端，前端比較擅長使用熱門UI框架進行建置。
 
