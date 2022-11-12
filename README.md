@@ -13,12 +13,16 @@ Hi, 我是志謙(Alan)，我是一個商業分析師(BA)，我非常喜歡Coding
 
  > 成功不是靠天賦，靠的是努力與熱忱。
 
-#### 我擅長的技能:
+#### 我的技能:
 
 1. [程式語言] Java / Excel VBA
 2. [ANSI SQL] MySQL
 
-#### 我擅長的工具:
+#### 我的證照:
+
+1. 
+
+#### 我的工具:
 
 1. [MS Office] Excel / Access / Word / PowerPoint / Visio / Power BI
 2. [IDE] Intellij / eclipse / VSCode
