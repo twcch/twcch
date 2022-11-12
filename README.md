@@ -9,44 +9,18 @@
 
 歡迎來到我的Github頁面!!
 
-我是志謙(Alan)，我是一個非常喜還寫程式、熱衷於學習新技術的人。擅長使用Java及Spring framework進行開發。
+Hi, 我是志謙(Alan)，我是一個商業分析師(BA)，我非常喜歡Coding和學習新技術。擅長使用Java及SQL。
 
  > 成功不是靠天賦，靠的是努力與熱忱。
 
 #### 我擅長的技能:
 
-1. [後端] Java / Spring Boot / Spring Data JPA / Spring Data JDBC / Thymeleaf
-2. [前端] HTML / CSS / JavaScript / Bootstrap
-3. [資料庫] MySQL
-4. [其他] JUnit5 / Git / Maven / RESTful / Web MVC / Web MVVM
-
-自述: 我擅長使用Java+Spring Boot+Spring Data JPA+Thymeleaf開發網站後端，前端比較擅長使用熱門UI框架進行建置。
-
-#### 我的作品:
-
-1. 個人部落格(全端): [[Github連結]](https://github.com/twcch/java-web-blog)
-2. 簡易商城(後端): [[Github連結]](https://github.com/twcch/java-web-shop-backend)
-
-#### 我目前在Fubon Life從事的工作: (總年資約3年)
-
-1. 商業分析(Business Analysis)
-2. 使用者驗收測試(User Acceptance Testing; UAT)
+1. [程式語言] Java / Excel VBA
+2. [ANSI SQL] MySQL
 
 #### 我擅長的工具:
 
-1. [MS Office] Excel VBA / Excel / Access / Word / PowerPoint / Visio
+1. [MS Office] Excel / Access / Word / PowerPoint / Visio / Power BI
 2. [IDE] Intellij / eclipse / VSCode
-3. [雲端空間] AWS / GCP / Shared web hosting
-4. [中/英文打字] 約60字/分
-
-#### 我目前正在進行的挑戰:
-
-1. 每天Coding至少3個小時
-2. 每週Coding至少30個小時
-3. 我目前正在進行的專案: Java個人部落格
-
-#### 我擅長的開源系統:
-
-1. [PHP] WordPress + WooCommerce
-2. [PHP] Discuz!
+3. [中/英文打字] 約60字/分
 
