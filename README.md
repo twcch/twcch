@@ -15,7 +15,7 @@ Hi, 我是志謙，過往皆任職於壽險公司擔任BA，總計2年多，主�
 
 #### 我的證照:
 
-1.
+1. 初級壽險管理師(CERT; FLMI Level 1)
 
 #### 我的技能:
 
@@ -36,9 +36,15 @@ Hi, 我是志謙，過往皆任職於壽險公司擔任BA，總計2年多，主�
 1. 具備後端(Java/Spring Boot)與前端(HTML/CSS/JavaScript)等開發能力，熟悉網站後端主流Web MVC或Web MVVM開發方式
 2. 熟悉Java後端與資料庫互動框架(Spring Data JDBC/Spring Data JPA/MyBatis)使用，實現CRUD功能的設計
 
-#### 我的工具:
+#### 其他專長:
 
-1. [MS Office] Excel / Access / Word / PowerPoint / Visio / Power BI
-2. [IDE] Intellij / eclipse / VSCode
-3. [中/英文打字] 約60字/分
+#程式語言
+1. 後端: Java/Spring
+2. 前端: HTML/CSS/JavaScript/Vuejs
+3. 資料庫: MySQL
+
+#其他
+1. MS Office: Excel VBA/Access/Power BI/Excel/Word/PowerPoint/Visio
+2. IDE: Intellij/eclipse/VSCode
+3. 中/英文打字: 約60字/分
 
