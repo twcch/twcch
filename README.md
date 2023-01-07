@@ -29,7 +29,6 @@ Hi, 我是志謙，過往皆任職於壽險公司擔任BA，總計2年多，主�
 #Java
 1. 具備後端(Java/Spring Boot)與前端(HTML/CSS/JavaScript)等開發能力，熟悉網站後端主流Web MVC或Web MVVM開發方式
 2. 熟悉Java後端與資料庫互動框架(Spring Data JDBC/Spring Data JPA/MyBatis)使用，實現CRUD功能的設計
-   #ANSI SQL  #Access  #VBA  #Java
 
 #### 專長
 
@@ -42,7 +41,6 @@ Hi, 我是志謙，過往皆任職於壽險公司擔任BA，總計2年多，主�
 1. MS Office: Excel VBA/Access/Power BI/Excel/Word/PowerPoint/Visio
 2. IDE: Intellij/eclipse/VSCode
 3. 中/英文打字: 約60字/分
-   #Java  #Spring  #ANSI SQL  #VBA  #中文打字50~75  #英文打字50~75
 
 #### 我擅長的開源系統:
 
