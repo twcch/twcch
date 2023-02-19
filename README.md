@@ -36,7 +36,7 @@
 #### 專長
 
 #程式語言
-1. 後端: Java/Spring
+1. 後端: Java/Spring Boot
 2. 前端: HTML/CSS/JavaScript/BootStrap
 3. 資料庫: MySQL/MSSQL
 
