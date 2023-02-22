@@ -7,7 +7,7 @@
 [![StackOverflow](https://img.shields.io/badge/-StackOverflow-orange?style=flat&logo=StackOverflow&logoColor=white)](https://stackoverflow.com/users/20167143/twcch1218)
 [![Gmail](https://img.shields.io/badge/-Gmail-c14438?style=flat&logo=Gmail&logoColor=white)](mailto:twcch1218@gmail.com)
 
-我是謝志謙，我是一位經驗豐富的理賠需求分析師(BA)，具有3年以上的人壽保險業相關工作經驗。我擅長於分析使用者的需求並提出解決方案，以確保使用者能夠得到最佳的理賠系統體驗。此外，我還具備優秀的Excel VBA/Access/Ansi SQL等技能。也熟悉主流後端網站系統開發(MVC/MVVM)設計邏輯，在溝通上或規劃上，可以提出更可靠且優秀的需求分析與規劃的成果。
+我是志謙，我是一位經驗豐富的理賠需求分析師(BA)，具有3年以上的人壽保險業相關工作經驗。我擅長於分析使用者的需求並提出解決方案，以確保使用者能夠得到最佳的理賠系統體驗。此外，我還具備優秀的Excel VBA/Access/Ansi SQL等技能。也熟悉主流後端網站系統開發(MVC/MVVM)設計邏輯，在溝通上或規劃上，可以提出更可靠且優秀的需求分析與規劃的成果。
 
 #### 技能與專業:
 
