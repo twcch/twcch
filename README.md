@@ -1,11 +1,16 @@
 ### Hi there
 
-[![Blog](https://img.shields.io/badge/-Blog-blueviolet?style=flat&logo=WordPress&logoColor=white)](https://twcch.github.io/)
-[![Github](https://img.shields.io/badge/-Github-000?style=flat&logo=Github&logoColor=white)](https://github.com/twcch)
-[![Linkedin](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/twcch/)
-[![LeetCode](https://img.shields.io/badge/-LeetCode-yellow?style=flat&logo=LeetCode&logoColor=white)](https://leetcode.com/twcch1218/)
-[![StackOverflow](https://img.shields.io/badge/-StackOverflow-orange?style=flat&logo=StackOverflow&logoColor=white)](https://stackoverflow.com/users/20167143/twcch1218)
-[![Gmail](https://img.shields.io/badge/-Gmail-c14438?style=flat&logo=Gmail&logoColor=white)](mailto:twcch1218@gmail.com)
+[//]: # ([![Blog]&#40;https://img.shields.io/badge/-Blog-blueviolet?style=flat&logo=WordPress&logoColor=white&#41;]&#40;https://twcch.github.io/&#41;)
+
+[//]: # ([![Github]&#40;https://img.shields.io/badge/-Github-000?style=flat&logo=Github&logoColor=white&#41;]&#40;https://github.com/twcch&#41;)
+
+[//]: # ([![Linkedin]&#40;https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white&#41;]&#40;https://www.linkedin.com/in/twcch/&#41;)
+
+[//]: # ([![LeetCode]&#40;https://img.shields.io/badge/-LeetCode-yellow?style=flat&logo=LeetCode&logoColor=white&#41;]&#40;https://leetcode.com/twcch1218/&#41;)
+
+[//]: # ([![StackOverflow]&#40;https://img.shields.io/badge/-StackOverflow-orange?style=flat&logo=StackOverflow&logoColor=white&#41;]&#40;https://stackoverflow.com/users/20167143/twcch1218&#41;)
+
+[//]: # ([![Gmail]&#40;https://img.shields.io/badge/-Gmail-c14438?style=flat&logo=Gmail&logoColor=white&#41;]&#40;mailto:twcch1218@gmail.com&#41;)
 
 我是志謙，我是一位經驗豐富的理賠需求分析師(BA)，具有3年以上的人壽保險業相關工作經驗。我擅長於分析使用者的需求並提出解決方案，以確保使用者能夠得到最佳的理賠系統體驗。此外，我還具備優秀的Excel VBA/Access/Ansi SQL等技能。也熟悉主流後端網站系統開發(MVC/MVVM)設計邏輯，在溝通上或規劃上，可以提出更可靠且優秀的需求分析與規劃的成果。
 
