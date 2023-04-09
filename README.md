@@ -1,4 +1,4 @@
-### Hello, I'm Alan. 🇹🇼
+### Hello, I'm Alan.
 
 I'm currently working as a **Business Analyst** in the financial industry,  
 and also an amateur **Java Software Engineer** (as I like to call myself).
