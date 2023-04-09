@@ -3,7 +3,7 @@
 I'm currently working as a **Business Analyst** in the financial industry,  
 and also an amateur **Java Software Engineer** (as I like to call myself).
 
-Email: twcch1218 [at] gmail.com
+📧 Email: twcch1218 [at] gmail.com
 
 ### What I'm currently trying:
  - 🤪 Working hard to learn Java programming.
