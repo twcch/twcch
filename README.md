@@ -1,6 +1,6 @@
 ### Hello, I'm Alan.
 
-I'm currently working as a **Business Analyst** in the financial industry,  
+I'm currently working as a **Business Analyst/Insurance System Analyst** in the financial industry,  
 and also an amateur **Java Software Engineer** (as I like to call myself).
 
 📧 Email: twcch1218 [at] gmail.com
@@ -11,7 +11,7 @@ and also an amateur **Java Software Engineer** (as I like to call myself).
 
 ### 2023 Goals:
  - 😣 Find a girlfriend.
- - 🙃 Pass the OCPJP certification.
+ - 🙃 Pass the OCPJP/OCPWCD certification.
  - 😢 Improving English proficiency.
 
 ### Expectations:
