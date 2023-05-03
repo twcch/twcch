@@ -1,6 +1,6 @@
 ### Hello, I'm Alan.
 
-I'm currently working as a/an **Business Analyst/Insurance System Analyst** in the financial industry,  
+I'm currently working as an **Insurance Business Analyst/System Analyst** in the financial industry,  
 and also an amateur **Java Software Engineer** (as I like to call myself).
 
 📧 Email: twcch1218 [at] gmail.com
