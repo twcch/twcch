@@ -5,6 +5,10 @@ and also an amateur **Java Software Engineer** (as I like to call myself).
 
 📧 Email: twcch1218 [at] gmail.com
 
+### My Skills
+ - Backend: Java/Python
+ - Ansi SQL: MySQL
+
 ### What I'm currently trying:
  - 🤪 Working hard to learn Java programming.
  - 😵‍💫 Trying to understand the future applications of AI.
