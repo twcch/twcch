@@ -3,7 +3,7 @@
 I'm currently working as an **Insurance Business Analyst (System Analyst)** in the financial industry,  
 and also an amateur **Java Software Engineer** (as I like to call myself).
 
-📧 Email: twcch1218 [at] gmail.com
+📧 Email: twcch1218 [at] gmail.com  
 ⭐ Motto: It may take 10000 hours, more or less; it is never too late.
 
 ### My Skills
