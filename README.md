@@ -6,7 +6,7 @@ and also an amateur **Java Software Engineer** (as I like to call myself).
 📧 Email: twcch1218 [at] gmail.com
 
 ### My Skills
- - Backend: Java/Python
+ - Backend: Java / Python
  - Ansi SQL: MySQL
 
 ### What I'm currently trying:
@@ -15,7 +15,7 @@ and also an amateur **Java Software Engineer** (as I like to call myself).
 
 ### 2023 Goals:
  - 😣 Find a girlfriend.
- - 🙃 Pass the OCPJP/OCPWCD certification.
+ - 🙃 Pass the OCPJP / OCPWCD certification.
  - 😢 Improving English proficiency.
 
 ### Expectations:
