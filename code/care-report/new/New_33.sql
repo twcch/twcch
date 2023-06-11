@@ -110,9 +110,9 @@ INNER JOIN `LP_FBDB/FCLDETA0` AS deta2
     )
 INNER JOIN `LP_FBDB/FCLPRIM0` AS prim
     ON (prim.RGST_NO = deta2.RGST_NO)
-INNER JOIN LP_FBDB/FCLBENE0 bene
+INNER JOIN `LP_FBDB/FCLBENE0` AS bene
     ON (bene.RGST_NO = prim.RGST_NO)
-INNER JOIN LP_FBDB/FCLPRRS0 prrs
+INNER JOIN `LP_FBDB/FCLPRRS0` AS prrs
     ON
     (
         prim.RGST_NO = prrs.RGST_NO
@@ -181,8 +181,14 @@ LEFT JOIN
                                         'G101', 'A171', 'A112', 'A11O', 'A11F', 'A604', 'A603', 'A601', 'A11D', 'A11Q',
                                         'A12B', 'A12D', 'A12E', 'A12F', 'A18B', 'A181', 'A812', 'A814', 'G10A', 'G118',
                                         'G604', 'G806', 'H115')
-        GROUP BY deta3.POLICY_NO,ID_DUP,POLICY_SEQ,ITEM
-        ORDER BY deta3.POLICY_NO,ID_DUP,POLICY_SEQ,ITEM
+        GROUP BY deta3.POLICY_NO,
+                    ID_DUP,
+                    POLICY_SEQ,
+                    ITEM
+        ORDER BY deta3.POLICY_NO,
+                    ID_DUP,
+                    POLICY_SEQ,
+                    ITEM
 ) AS accd
     ON
     (
