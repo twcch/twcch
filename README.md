@@ -9,7 +9,7 @@ and also an amateur **Java Developer** (as I like to call myself).
 
 ### My Skills
  - Backend: Java + Spring Boot
- - Ansi SQL: MySQL
+ - Ansi SQL: Oracle / MySQL
 
 ### What I'm currently trying:
  - 🤪 Working hard to learn Java programming.
