@@ -8,7 +8,7 @@ and also an amateur **Java Developer** (as I like to call myself).
 ⭐ Motto: It may take 10000 hours, more or less; it is never too late.
 
 ### My Skills
- - Backend: Java + Spring Boot
+ - Backend: Java + SpringBoot
  - Ansi SQL: MySQL
 
 ### What I'm currently trying:
