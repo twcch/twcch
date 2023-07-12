@@ -10,7 +10,8 @@ SELECT DISTINCT(ITEM),
 
 -- STEP 2
 
-SELECT T02.RGST_NO,
+SELECT T02.APPLY_NO,
+        T02.RGST_NO,
         T02.ITEM,
         T02.CLAIM_ITEM,
         T02.GIVE_YY,
@@ -38,7 +39,8 @@ SELECT T02.RGST_NO,
 
 -- STEP 3
 
-SELECT S01.RGST_NO,
+SELECT S01.APPLY_NO,
+        S01.RGST_NO,
         S01.ITEM,
         S01.CLAIM_ITEM,
         S01.GIVE_YY,
@@ -48,7 +50,8 @@ SELECT S01.RGST_NO,
         S02.STEP_CODE
     FROM 
     (
-        SELECT T02.RGST_NO,
+        SELECT T02.APPLY_NO,
+                T02.RGST_NO,
                 T02.ITEM,
                 T02.CLAIM_ITEM,
                 T02.GIVE_YY,
@@ -75,5 +78,5 @@ SELECT S01.RGST_NO,
                     AND T02.GIVE_MM = 6
     ) AS S01
     LEFT JOIN `LP_FBDB/FCLPRIM0` AS S02
-        ON S01.RGST_NO = S02.RGST_NO
+        ON S01.APPLY_NO = S02.APPLY_NO
     WHERE S02.STEP_CODE <> 'C' AND S02.STEP_CODE <> 'X';
