@@ -32,7 +32,9 @@ SELECT T02.RGST_NO,
             AND T01.CLAIM_ITEM = T02.CLAIM_ITEM
     WHERE T02.RGST_NO <> NULL 
             AND (T02.CNCT_STAT IS NULL 
-                    OR T02.CNCT_STAT IN (' ', '01', '02', '03', '04', '05', '06', '07', '16', '20', '25', '27', 'WP'));
+                    OR T02.CNCT_STAT IN (' ', '01', '02', '03', '04', '05', '06', '07', '16', '20', '25', '27', 'WP'))
+            AND T02.GIVE_YY = 112 
+            AND T02.GIVE_MM = 6;
 
 -- STEP 3
 
@@ -68,7 +70,9 @@ SELECT S01.RGST_NO,
                     AND T01.CLAIM_ITEM = T02.CLAIM_ITEM
             WHERE T02.RGST_NO <> NULL 
                     AND (T02.CNCT_STAT IS NULL 
-                            OR T02.CNCT_STAT IN (' ', '01', '02', '03', '04', '05', '06', '07', '16', '20', '25', '27', 'WP'))
+                            OR T02.CNCT_STAT IN (' ', '01', '02', '03', '04', '05', '06', '07', '16', '20', '25', '27', 'WP')) 
+                    AND T02.GIVE_YY = 112 
+                    AND T02.GIVE_MM = 6
     ) AS S01
     LEFT JOIN `LP_FBDB/FCLPRIM0` AS S02
         ON S01.RGST_NO = S02.RGST_NO
