@@ -43,7 +43,7 @@ SELECT S01.RGST_NO,
         S01.GIVE_MM,
         S01.GIVE_DD,
         S01.CNCT_STAT,
-        S02.SETP_CODE
+        S02.STEP_CODE
     FROM 
     (
         SELECT T02.RGST_NO,
