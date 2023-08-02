@@ -10,6 +10,7 @@ and also an amateur **Java Developer** (as I like to call myself).
 ### My Coding Skills
 
 - Backend: Java + Spring Boot + MyBatis
+- Data analysis: Excel VBA, Python
 - Ansi SQL: MSSQL, MySQL
 
 ### What I'm currently trying
@@ -20,11 +21,11 @@ and also an amateur **Java Developer** (as I like to call myself).
 ### 2023 Goals
 
 - 😭 Pass the PMP certification.
-- 🙃 Pass the OCAJP/OCPJP certification.
+- 🙃 Pass the OCAJP, OCPJP certification.
 
 ### 2023 Goals (Hope)
 
-- 😥 Complete the appointment system (Java, Spring Boot, MyBatis)
+- 😥 Complete the appointment system (Java, Spring Boot, MyBatis + MySQL + BootstrapVue)
 - 😢 Improving English proficiency.
 - 😣 Find a girlfriend.
 
