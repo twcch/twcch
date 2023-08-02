@@ -15,12 +15,12 @@ and also an amateur **Java Developer** (as I like to call myself).
 ### What I'm currently trying
 
 - 🤪 Working hard to learn Java programming.
-- 😵‍💫 Trying to understand the future applications of AI.
+- 😵 Trying to understand the future applications of AI.
 
 ### 2023 Goals
 
 - 😭 Pass the PMP certification.
-- 🙃 Pass the OCAJP certification.
+- 🙃 Pass the OCAJP/OCPJP certification.
 
 ### 2023 Goals (Hope)
 
