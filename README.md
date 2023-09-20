@@ -9,9 +9,9 @@ and also an amateur **Java Developer** (as I like to call myself).
 
 ### My Coding Skills
 
-- Backend: Java + Spring Boot + MyBatis
+- Backend: Java + Spring Boot + Java Data JPA/JDBC
 - Data analysis: Excel VBA, Python
-- Ansi SQL: MSSQL, MySQL
+- Ansi SQL: MySQL
 
 ### What I'm currently trying
 
@@ -25,9 +25,7 @@ and also an amateur **Java Developer** (as I like to call myself).
 
 ### 2023 Goals (Hope)
 
-- 😥 Complete the appointment system (Java, Spring Boot, MyBatis, MySQL, BootstrapVue)
 - 😢 Improving English proficiency.
-- 😣 Find a girlfriend.
 
 ### Expectations
 
