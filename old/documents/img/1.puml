@@ -1,3 +1,0 @@
-@startuml
-使用者 -> ICMS: 輸入給付日-年/給付日-月
-@enduml
