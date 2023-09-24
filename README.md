@@ -9,7 +9,7 @@ and also an amateur **Java Developer** (as I like to call myself).
 
 ### My Coding Skills
 
-- Backend: Java + Spring Boot + Java Data JPA/JDBC
+- Backend: Java + Spring Boot
 - Data analysis: Excel VBA, Python
 - Ansi SQL: MySQL
 
