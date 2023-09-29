@@ -12,7 +12,7 @@ and also an amateur **Java Programmer** (as I like to call myself).
 - Business analysis
 - Data processing and analysis
 - Ansi SQL and database
-- Java Web Developer (Java + Srping Boot)
+- Java web developer (Java + Srping Boot)
 
 ### What I'm currently trying
 
