@@ -1,17 +1,21 @@
 ### Hello, I'm Alan
 
 I'm a **Senior Business Analyst** in the financial industry,
-and also an amateur **Java Developer** (as I like to call myself).
+and also an amateur **Java Programmer** (as I like to call myself).
 
 📧 Email: twcch1218 [at] gmail.com  
 
 ⭐ Motto: It may take 10000 hours, more or less; it is never too late.
 
-### My Coding Skills
+### My Skills
 
-- Backend: Java + Spring Boot
-- Data analysis: Excel VBA, Python
-- Ansi SQL: MySQL
+- Business analysis
+- Data processing and analysis
+
+    #### My Coding Skills
+
+    - Backend: Java + Spring Boot
+    - Ansi SQL: MySQL
 
 ### What I'm currently trying
 
