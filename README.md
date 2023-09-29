@@ -11,11 +11,8 @@ and also an amateur **Java Programmer** (as I like to call myself).
 
 - Business analysis
 - Data processing and analysis
-
-    #### My Coding Skills
-
-    - Backend: Java + Spring Boot
-    - Ansi SQL: MySQL
+- Ansi SQL and database
+- Java Web Developer (Java + Srping Boot)
 
 ### What I'm currently trying
 
