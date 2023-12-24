@@ -11,7 +11,7 @@ and also an amateur **Java Programmer** (as I like to call myself).
 
 - Business analysis
 - Data processing and analysis
-- Ansi SQL and database
+- Ansi SQL and Oracle database
 - Java web developer (Java + Srping Boot)
 
 ### What I'm currently trying
@@ -19,12 +19,12 @@ and also an amateur **Java Programmer** (as I like to call myself).
 - 🤪 Working hard to learn Java programming.
 - 😵 Trying to understand the future applications of AI.
 
-### 2023 Goals
+### 2024 Goals
 
 - 😭 Pass the PMP certification.
 - 🙃 Pass the OCAJP, OCPJP certification.
 
-### 2023 Goals (Hope)
+### 2024 Goals (Hope)
 
 - 😢 Improving English proficiency.
 
