@@ -10,9 +10,9 @@ and also an amateur **Java Programmer** (as I like to call myself).
 ### My Skills
 
 - Business analysis
-- Data processing and analysis
-- Ansi SQL and Oracle database
-- Java web developer (Java + Srping Boot)
+- Project management
+- Java web developer (Java/Spring Boot/Spring Data JPA)
+- Python/Pandas/Ansi SQL
 
 ### What I'm currently trying
 
@@ -21,7 +21,6 @@ and also an amateur **Java Programmer** (as I like to call myself).
 
 ### 2024 Goals
 
-- 😭 Pass the PMP certification.
 - 🙃 Pass the OCAJP, OCPJP certification.
 
 ### 2024 Goals (Hope)
