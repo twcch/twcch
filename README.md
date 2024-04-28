@@ -1,28 +1,31 @@
 ### Hi, 我是志謙
 
-我是一位金融業的**商業分析師**，也是一位曾經想轉職成 Java 開發工程師的 Java 業餘愛好者。
+I am a **Business Analyst** in the finance industry and also an amateur Java enthusiast who once considered transitioning to a Java developer.
 
 📧 Email: twcch1218 [at] gmail.com  
 
 ⭐ Motto: It may take 10000 hours, more or less; it is never too late.
 
-### 我的技能
+### My Expertise
 
-- 商業分析
-- 專案管理
-- Python, Ansi SQL 數據評估、數據清洗、數據處理與分析
-- Java Web (Java, Spring Boot) 開發
+- Business Analysis
+- Project Management
 
-### 現在正在嘗試 ...
+### My Skills
 
-- 🤪 努力精進 Python, Java 的編程能力
-- 😵 努力的理解 AI 的相關技術與應用
+- Java Web Development (Java, Spring Boot, Spring Data JPA)
+- Data Analysis (Python, Ansi SQL)
 
-### 2024 的目標 ...
+### Currently trying to...
 
-- 😢 提升英語能力
-- 🙃 取得 OCPJP 的認證
+- 🤪 Work hard to improve programming skills in Python and Java.
+- 😵 Struggling to understand AI technologies and applications
 
-### 喜歡做的事 ...
+### Goals for 2024...
 
-- 😟 思考人生
+- 😢 Improve English proficiency
+- 🙃 Obtain OCPJP certification
+
+### Things I enjoy...
+
+- 😟 Reflecting on life
