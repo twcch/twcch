@@ -6,13 +6,10 @@ I am a **Business Analyst** in the finance industry and also an amateur Java ent
 
 ⭐ Motto: It may take 10000 hours, more or less; it is never too late.
 
-### My Expertise
+### My Expertise and Skills
 
 - Business Analysis
 - Project Management
-
-### My Skills
-
 - Java Web Development (Java, Spring Boot, Spring Data JPA)
 - Data Analysis (Python, Ansi SQL)
 
