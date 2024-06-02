@@ -1,4 +1,4 @@
-### Hi, 我是志謙
+### Hi, I'm Alan Hsieh
 
 I am a **Business Analyst** in the finance industry and also an amateur Java enthusiast who once considered transitioning to a Java developer.
 
