@@ -10,8 +10,8 @@ I am a **Business Analyst** in the finance industry and also an amateur Java ent
 
 - Business Analysis
 - Project Management
-- Java Web Development (Java, Spring Boot, Spring Data JPA)
 - Data Analysis (Python, Ansi SQL)
+- Java Web Development (Java, Spring Boot, Spring JDBC, Spring Data JPA)
 
 ### Currently trying to...
 
