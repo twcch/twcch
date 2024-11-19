@@ -10,8 +10,10 @@ I am a PhD student primarily researching machine learning and deep learning.
 
 ### Research Areas
 
-Insurance Management, Corporate Governance, Machine Learning, Deep Learning
+- Insurance Management, Corporate Governance
+- Machine Learning, Deep Learning
 
 ### Skills
 
-Python, Java, PostgreSQL
+- Python, Java
+- PostgreSQL
