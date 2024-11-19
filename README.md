@@ -2,8 +2,6 @@
 
 I am a PhD student primarily researching machine learning and deep learning.
 
-📧 Email: twcch1218 [at] gmail.com  
-
 ⭐ Motto: It may take 10000 hours, more or less; it is never too late.
 
 ### Education
@@ -12,11 +10,8 @@ I am a PhD student primarily researching machine learning and deep learning.
 
 ### Research Areas
 
-- Machine Learning
-- Deep Learning
+Insurance Management, Corporate Governance, Machine Learning, Deep Learning
 
 ### Skills
 
-- Python
-- Java
-- PostgreSQL
+Python, Java, PostgreSQL
