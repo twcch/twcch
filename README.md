@@ -16,4 +16,4 @@ I am a PhD student primarily researching machine learning and deep learning.
 ### Skills
 
 - Python, Java
-- PostgreSQL
+- PostgreSQL 
