@@ -8,11 +8,6 @@ I am a PhD student primarily researching machine learning and deep learning.
 
 - National Cheng Kung University, Department of Engineering Science, PhD Student
 
-### Research Areas
-
-- Insurance Management, Corporate Governance
-- Machine Learning, Deep Learning
-
 ### Skills
 
 ![Python](https://img.shields.io/badge/Python-444?style=flat&logo=Python&logoColor=white)
