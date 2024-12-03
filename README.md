@@ -15,5 +15,6 @@ I am a PhD student primarily researching machine learning and deep learning.
 
 ### Skills
 
-- Python, Java
-- PostgreSQL
+![Python](https://img.shields.io/badge/Python-444?style=flat&logo=Python&logoColor=white)
+![Django](https://img.shields.io/badge/Django-444?style=flat&logo=Django&logoColor=white)
+![ProstgreSQL](https://img.shields.io/badge/PostgreSQL-444?style=flat&logo=PostgreSQL&logoColor=white)
