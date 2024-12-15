@@ -6,7 +6,7 @@ I am a PhD student primarily researching machine learning and deep learning.
 
 ### Education
 
-- National Cheng Kung University, Department of Engineering Science, PhD Student
+- Ph.D Student, National Cheng Kung University
 
 ### Latest Posts
 
