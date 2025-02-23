@@ -1,16 +1,6 @@
 ### Hi, I'm Alan Hsieh
 
-I am a PhD student primarily researching machine learning and deep learning.
-
 ⭐ Motto: It may take 10000 hours, more or less; it is never too late.
-
-### Education
-
-- Ph.D Student, National Cheng Kung University
-
-### Latest Posts
-
-- 
 
 ### Skills
 
