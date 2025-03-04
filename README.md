@@ -4,8 +4,6 @@
 
 - Education:
   - Ph.D. Student in Department of Engineering Science at NCKU
-  - Master's Degree in Department of Insurance and Finance from NUTC
-  - Bachelor’s Degree in Department of Insurance and Finance from NUTC
 
 - Expertise:
   - Machine Learning
