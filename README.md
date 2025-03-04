@@ -3,7 +3,7 @@
 ⭐ Motto: It may take 10000 hours, more or less; it is never too late.
 
 - Education:
-  - Ph.D. Student in Department of Engineering Science at NCKU
+  - Currently pursuing a Ph.D. at National Cheng Kung University
 
 - Expertise:
   - Machine Learning
