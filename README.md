@@ -3,9 +3,9 @@
 ⭐ Motto: It may take 10000 hours, more or less; it is never too late.
 
 - Education:
-  - Ph.D. Student in Department of Engineering Science at National Cheng Kung University
-  - Master's Degree in Department of Insurance and Finance from National Taichung University of Science and Technology
-  - Bachelor’s Degree in Department of Insurance and Finance from National Taichung University of Science and Technology
+  - Ph.D. Student in Department of Engineering Science at NCKU
+  - Master's Degree in Department of Insurance and Finance from NUTC
+  - Bachelor’s Degree in Department of Insurance and Finance from NUTC
 
 - Expertise:
   - Machine Learning
@@ -18,6 +18,6 @@
   - Microsoft SQL Server
 
 - Contact Me:
-  - Email: twcch1218@gmail.com
+  - Email: twcch1218 [at] gmail.com
 
 
