@@ -1,5 +1,5 @@
 <h2 align="center">Business Analyst</h2>
-<img src="https://github-readme-stats.vercel.app/api?username=twcch&show_icons=true" alt="Alan's GitHub stats" align="right">
+<!-- <img src="https://github-readme-stats.vercel.app/api?username=twcch&show_icons=true" alt="Alan's GitHub stats" align="right"> -->
 
 ### Hi, I'm Alan Hsieh
 
