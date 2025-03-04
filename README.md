@@ -5,6 +5,7 @@
 - Education:
   - Ph.D. Student in Department of Engineering Science at National Cheng Kung University
   - Master's Degree in Department of Insurance and Finance from National Taichung University of Science and Technology
+  - Bachelor’s Degree in Department of Insurance and Finance from National Taichung University of Science and Technology
 
 - Expertise:
   - Machine Learning
