@@ -10,7 +10,7 @@
 - Programming Languages:
   - Python
   - Java, Spring Framework
-  - PostgreSQL, 
+  - PostgreSQL
 
 - Contact Me:
   - Email: twcch1218 [at] gmail.com
