@@ -2,6 +2,9 @@
 
 ⭐ Motto: It may take 10000 hours, more or less; it is never too late.
 
+- Education:
+  - M.B.A, Department of Insurance and Finance, National Taichung University of Science and Technology
+
 - Expertise:
   - Financial Risk Analysis
   - Machine Learning
