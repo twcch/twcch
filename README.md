@@ -4,6 +4,7 @@
 
 - Education:
   - M.B.A, Department of Insurance and Finance, National Taichung University of Science and Technology
+  - B.B.A, Department of Insurance and Finance, National Taichung University of Science and Technology
 
 - Expertise:
   - Financial Risk Analysis
