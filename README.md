@@ -2,18 +2,16 @@
 
 ⭐ Motto: It may take 10000 hours, more or less; it is never too late.
 
-- Education:
-  - Ph.D. Student, National Cheng Kung University
-
 - Expertise:
+  - Financial Risk Analysis
   - Machine Learning
   - Deep Learning
-  - Data Mining
 
 - Programming Languages:
   - Python
   - Java, Spring Framework
-  - Oracle
+  - PostgreSQL, 
 
 - Contact Me:
   - Email: twcch1218 [at] gmail.com
+
