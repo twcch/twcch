@@ -13,11 +13,6 @@
   - Big Data Analytics
   - Financial Risk Analytics
 
-- Skills:
-  - Python, PyTorch
-  - Java, Spring Framework
-  - PostgreSQL
-
 - Contact Me:
   - Email: twcch1218 [at] gmail.com
 
