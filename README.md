@@ -8,12 +8,13 @@
   - Bachelor’s Degree in the Department of Insurance and Finance, NTCUST
 
 - Expertise:
-  - Financial Risk Analysis
   - Machine Learning
   - Deep Learning
+  - Big Data Analytics
+  - Financial Risk Analytics
 
-- Programming Languages:
-  - Python
+- Skills:
+  - Python, PyTorch
   - Java, Spring Framework
   - PostgreSQL
 
