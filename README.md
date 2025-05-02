@@ -12,6 +12,11 @@
   - Big Data Analytics
   - Financial Risk Analytics
 
+- Programming Languages:
+  - Python, PyTorch
+  - Java, Spring Framework
+  - PostgreSQL
+
 - Contact Me:
   - Email: twcch1218 [at] gmail.com
-
+  - [LinkedIn](https://leetcode.com/u/twcch1218/) | [LeetCode](https://leetcode.com/u/twcch1218/) | [Kaggle](https://www.kaggle.com/twcch1218/)
