@@ -2,6 +2,8 @@
 
 ⭐ Motto: It may take 10000 hours, more or less; it is never too late.
 
+- Ph.D. student in Department of Engineering Science, National Cheng Kung University (2025–Present)
+
 - Expertise:
   - Financial Risk Analysis
   - Machine Learning
