@@ -7,6 +7,7 @@
   - Master's Degree in the Department of Insurance and Finance, NTCUST
 
 - Expertise:
+  - Artifical Intelligence
   - Machine Learning
   - Deep Learning
   - Big Data Analytics
