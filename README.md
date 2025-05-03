@@ -5,6 +5,8 @@
 - Education
   - Ph.D. Student, Department of Engineering Science, NCKU
   - Master's Degree, Department of Insurance and Finance, NTCUST
+  - Ph.D. Student, Department of Engineering Science, National Cheng Kung University
+  - Master's Degree, Department of Insurance and Finance, National Taichung University of Science and Technology
 
 - Expertise:
   - Artifical Intelligence
