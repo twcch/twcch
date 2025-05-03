@@ -3,8 +3,8 @@
 ⭐ Motto: It may take 10000 hours, more or less; it is never too late.
 
 - Education
-  - Ph.D. Student, National Cheng Kung University
-  - Master's Degree, National Taichung University of Science and Technology
+  - Ph.D. Student, Department of Engineering Science, NCKU
+  - Master's Degree, Department of Insurance and Finance, NTCUST
 
 - Expertise:
   - Artifical Intelligence
