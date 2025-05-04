@@ -18,6 +18,6 @@ Expertise
 Artificial Intelligence • Machine Learning • Deep Learning • Big Data Analytics • Financial Risk Analytics
 
 
-- Contact Me:
-  - Email: twcch1218 [at] gmail.com
-  - [Website](https://twcch.github.io/) | [LeetCode](https://leetcode.com/u/twcch1218/) | [Kaggle](https://www.kaggle.com/twcch1218/) | [LinkedIn](https://leetcode.com/u/twcch1218/)
+Contact Me:
+- Email: twcch1218 [at] gmail.com
+- [Website](https://twcch.github.io/) | [LeetCode](https://leetcode.com/u/twcch1218/) | [Kaggle](https://www.kaggle.com/twcch1218/) | [LinkedIn](https://leetcode.com/u/twcch1218/)
