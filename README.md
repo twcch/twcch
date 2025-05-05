@@ -4,7 +4,7 @@
 
 #### Education
 
-- Ph.D. in Engineering Science, National Cheng Kung University (2025–Present)
+- Ph.D. in Engineering Science (Computer Science and Applications), National Cheng Kung University (2025–Present)
 - M.B.A. in Insurance and Finance, National Taichung University of Science and Technology (2016–2018)
 - B.B.A. in Insurance and Finance, National Taichung University of Science and Technology (2014–2016)
 
