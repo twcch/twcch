@@ -17,6 +17,10 @@
 
 Artificial Intelligence • Machine Learning • Deep Learning • Big Data Analytics • Financial Risk Analytics
 
+#### Programming Languages
+
+Python • Java • C++ • SQL
+
 #### Contact
 
 - Email: twcch1218 [at] gmail.com
