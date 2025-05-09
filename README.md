@@ -15,11 +15,11 @@
 
 Artificial Intelligence • Machine Learning • Deep Learning • Big Data Analytics • Financial Risk Analytics
 
-#### Programming Languages
+#### Programming & Frameworks
 
-Python • Java • C++ • SQL
+Python (Flask / Flask-RESTful, PyTorch, TensorFlow) • Java (Spring) • C++ • SQL
 
 #### Contact
 
 - Email: twcch1218 [at] gmail.com
-- [Website](https://twcch.github.io/) | [LeetCode](https://leetcode.com/u/twcch1218/) | [Kaggle](https://www.kaggle.com/twcch1218/) | [LinkedIn](https://leetcode.com/u/twcch1218/)
+- [Website](https://twcch.github.io/) | [LeetCode](https://leetcode.com/u/twcch1218/) | [Kaggle](https://www.kaggle.com/twcch1218/) | [LinkedIn](https://www.linkedin.com/in/twcch1218/)
