@@ -17,6 +17,13 @@ Artificial Intelligence • Machine Learning • Deep Learning • Big Data Anal
 
 #### Programming & Frameworks
 
+- Python
+    - Backend Development: Flask, Flask REST APIs, Django
+    - Machine Learning: PyTorch, TensorFlow
+- Java
+- C++
+- SQL
+
 Python (Flask / Flask REST APIs, PyTorch, TensorFlow) • Java (Spring) • C++ • SQL
 
 #### Contact
