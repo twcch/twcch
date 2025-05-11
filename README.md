@@ -17,7 +17,7 @@ Artificial Intelligence • Machine Learning • Deep Learning • Big Data Anal
 
 #### Programming & Frameworks
 
-Python (Flask / Flask REST APIs, PyTorch, TensorFlow) • Java (Spring) • C++ • SQL
+Python (PyTorch, TensorFlow, Flask / Flask REST APIs) • Java (Spring) • C++ • SQL
 
 #### Contact
 
