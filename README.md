@@ -13,12 +13,12 @@
 
 #### Expertise
 
--   技術方法
+-   Technical Methods
     -   Machine Learning
     -   Deep Learning
     -   AI-based Anomaly Detection
     -   Structured Data Analysis
--   應用領域
+-   Application Domains
     -   Financial Statement Analytics
     -   Insurance Claims Analytics
     -   Risk Signal Modeling
