@@ -13,7 +13,7 @@
 
 #### Expertise
 
-Artificial Intelligence • Machine Learning • Deep Learning • Big Data Analytics • Financial Statement Analytics
+Artificial Intelligence • Machine Learning • Deep Learning • Big Data Analytics • Financial Statement Analytics • Insurance Claims Analytics
 
 #### Programming & Frameworks
 
