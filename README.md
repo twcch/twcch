@@ -13,7 +13,15 @@
 
 #### Expertise
 
-Artificial Intelligence • Machine Learning • Deep Learning • Big Data Analytics • Financial Statement Analytics • Insurance Claims Analytics
+-   技術方法
+    -   Machine Learning
+    -   Deep Learning
+    -   AI-based Anomaly Detection
+    -   Structured Data Analysis
+-   應用領域
+    -   Financial Statement Analytics
+    -   Insurance Claims Analytics
+    -   Risk Signal Modeling
 
 #### Programming & Frameworks
 
