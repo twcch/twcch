@@ -13,11 +13,11 @@
 
 #### Expertise
 
-Artificial Intelligence • Machine Learning • Deep Learning • Big Data Analytics • Financial Risk Analytics
+Artificial Intelligence • Machine Learning • Deep Learning • Big Data Analytics • Financial Statement Analytics
 
 #### Programming & Frameworks
 
-Python (PyTorch, TensorFlow, Flask / Flask REST APIs) • Java (Spring) • C++ • SQL
+Python (PyTorch, TensorFlow, Flask / Flask REST APIs) • Java (Spring) • SQL
 
 #### Contact
 
