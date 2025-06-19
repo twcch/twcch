@@ -29,7 +29,7 @@
 -	Technical Methods
 	-	Machine Learning and Deep Learning
 	-	Anomaly Detection (AI-based and statistical approaches)
-	-	Structed Data Analysis at Scale
+	-	Structured Data Analysis at Scale
 
 ## Technologies and Frameworks
 
