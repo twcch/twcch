@@ -4,7 +4,8 @@
 
 #### Education
 
-- Ph.D. in Engineering Science (Computer Science and Applications Division), National Cheng Kung University (2025–Present)
+-   Ph.D. in Engineering Science (Computer Science and Applications Division), National Cheng Kung University (2025–Present)
+    -   Research Focus: Machine learning applications in financial statement anomaly detection
 
 ## Expertise
 
@@ -25,5 +26,5 @@
 
 #### Contact
 
-- Email: twcch1218 [at] gmail.com
-- [Website](https://twcch.github.io/) | [LeetCode](https://leetcode.com/u/twcch1218/) | [Kaggle](https://www.kaggle.com/twcch1218/) | [LinkedIn](https://www.linkedin.com/in/twcch1218/)
+-   Email: twcch1218 [at] gmail.com
+-   [Website](https://twcch.github.io/) | [LeetCode](https://leetcode.com/u/twcch1218/) | [Kaggle](https://www.kaggle.com/twcch1218/) | [LinkedIn](https://www.linkedin.com/in/twcch1218/)
