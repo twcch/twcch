@@ -2,7 +2,7 @@
 
 ⭐ Motto: It may take 10000 hours, more or less; it is never too late.
 
-#### Education
+## Education
 
 -   Ph.D. in Engineering Science (Computer Science and Applications Division), National Cheng Kung University (2025–Present)
     -   Research Focus: Machine learning applications in financial statement anomaly detection
