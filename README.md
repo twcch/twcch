@@ -26,7 +26,7 @@
 -	Java (Spring Framework)
 -	SQL (PostgreSQL, MongoDB)
 
-#### Contact
+## Contact
 
 -   Email: twcch1218 [at] gmail.com
 -   [Website](https://twcch.github.io/) | [LeetCode](https://leetcode.com/u/twcch1218/) | [Kaggle](https://www.kaggle.com/twcch1218/) | [LinkedIn](https://www.linkedin.com/in/twcch1218/)
