@@ -6,7 +6,7 @@
 
 -   Ph.D. in Engineering Science (Computer Science and Applications Division), National Cheng Kung University (2025–Present)
     -   Research Focus: Machine learning applications in financial statement anomaly detection
--   M.B.A in Insurance and Finance, National Taichung University of Science and Technology (2016–2018)
+-   M.B.A. in Insurance and Finance, National Taichung University of Science and Technology (2016–2018)
     -   Research Focus: Statistical regression analysis of corporate financial risk and tax avoidance behavior
 
 ## Expertise
