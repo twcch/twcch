@@ -3,10 +3,10 @@
 ⭐ Motto: It may take 10000 hours, more or less; it is never too late.
 
 [![Email](https://img.shields.io/badge/Email-222?style=flat&logo=Gmail)](mailto:twcch1218@gmail.com)
-[![Website](https://img.shields.io/badge/Website-222?style=flat&logo=hetzner)](https://twcch.github.io/)
+[![Blog](https://img.shields.io/badge/Blog-222?style=flat&logo=medium)](https://twcch.github.io/)
 [![LeetCode](https://img.shields.io/badge/LeetCode-222?style=flat&logo=LeetCode)](https://leetcode.com/u/twcch1218/)
 [![Kaggle](https://img.shields.io/badge/Kaggle-222?style=flat&logo=keras)](https://www.kaggle.com/twcch1218/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-222?style=flat&logo=lobsters)](https://www.linkedin.com/in/twcch1218/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-222?style=flat&logo=logmein)](https://www.linkedin.com/in/twcch1218/)
 
 ## Education
 
