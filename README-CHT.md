@@ -26,7 +26,7 @@
 -	Java (Spring Framework)
 -	SQL (PostgreSQL, MongoDB)
 
-## Contact
+## 聯絡方式
 
--   Email: twcch1218 [at] gmail.com
+-   電子信箱: twcch1218 [at] gmail.com
 -   [Website](https://twcch.github.io/) | [LeetCode](https://leetcode.com/u/twcch1218/) | [Kaggle](https://www.kaggle.com/twcch1218/) | [LinkedIn](https://www.linkedin.com/in/twcch1218/)
