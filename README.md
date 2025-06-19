@@ -1,5 +1,7 @@
 <h2 align="center">Chih-Chien Hsieh</h2>
 
+[![Email](https://img.shields.io/badge/Email-222?style=flat&logo=Gmail)](mailto:twcch1218@gmail.com)
+
 ⭐ Motto: It may take 10000 hours, more or less; it is never too late.
 
 ## Education
@@ -30,3 +32,5 @@
 
 -   Email: twcch1218 [at] gmail.com
 -   [Website](https://twcch.github.io/) | [LeetCode](https://leetcode.com/u/twcch1218/) | [Kaggle](https://www.kaggle.com/twcch1218/) | [LinkedIn](https://www.linkedin.com/in/twcch1218/)
+
+
