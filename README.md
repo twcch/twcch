@@ -6,21 +6,22 @@
 
 - Ph.D. in Engineering Science (Computer Science and Applications Division), National Cheng Kung University (2025–Present)
 
-#### Expertise
+## Expertise
 
--   Technical Methods
-    -   Machine Learning
-    -   Deep Learning
-    -   AI-based Anomaly Detection
-    -   Structured Big Data Analysis
--   Application Domains
-    -   Financial Statement Analytics
-    -   Insurance Claims Analytics
-    -   Risk Signal Modeling
+-	Application Domains
+	-	Financial Statement Analytics (e.g. earnings manipulation detection)
+	-	Insurance Claims Analytics (e.g. fraud pattern discovery)
+	-	Risk Signal Modeling (based on structured financial data)
+-	Technical Methods
+	-	Machine Learning and Deep Learning
+	-	Anomaly Detection (AI-based and statistical approaches)
+	-	Structed Data Analysis at Scale
 
-#### Programming & Frameworks
+## Technologies and Frameworks
 
-Python (PyTorch, TensorFlow, Flask / Flask REST APIs) • Java (Spring) • SQL
+-	Python (PyTorch, TensorFlow, Flask, Flask-RESTful)
+-	Java (Spring Framework)
+-	SQL (PostgreSQL, MongoDB)
 
 #### Contact
 
