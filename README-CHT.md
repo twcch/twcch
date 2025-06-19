@@ -2,12 +2,23 @@
 
 ⭐ 座右銘: 也許需要一萬個小時，或多或少；但永遠不嫌晚。
 
+[![Email](https://img.shields.io/badge/Email-222?style=flat&logo=Gmail)](mailto:twcch1218@gmail.com)
+[![Blog](https://img.shields.io/badge/Blog-222?style=flat&logo=medium)](https://twcch.github.io/)
+[![LeetCode](https://img.shields.io/badge/LeetCode-222?style=flat&logo=LeetCode)](https://leetcode.com/u/twcch1218/)
+[![Kaggle](https://img.shields.io/badge/Kaggle-222?style=flat&logo=keras)](https://www.kaggle.com/twcch1218/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-222?style=flat&logo=logmein)](https://www.linkedin.com/in/twcch1218/)
+
 ## 學歷
 
 -	[2025–至今] 國立成功大學 工程科學系 (資訊工程與應用組) 博士生
 	-	研究重點: 機器學習在財務報表異常偵測上的應用
 -	[2016–2018] 國立臺中科技大學 保險與金融管理系 碩士
 	-	研究重點: 以統計迴歸分析探討企業財務風險與避稅行為
+
+## 工作經驗
+
+-	[2022–2025] 富邦人壽保險股份有限公司 專案襄理 (商業分析師)
+-	[2020–2022] 南山人壽保險股份有限公司 專員 (商業分析師)
 
 ## 專長
 
@@ -26,7 +37,4 @@
 -	Java (Spring Framework)
 -	SQL (PostgreSQL, MongoDB)
 
-## 聯絡方式
 
--   電子信箱: twcch1218 [at] gmail.com
--   [Website](https://twcch.github.io/) | [LeetCode](https://leetcode.com/u/twcch1218/) | [Kaggle](https://www.kaggle.com/twcch1218/) | [LinkedIn](https://www.linkedin.com/in/twcch1218/)

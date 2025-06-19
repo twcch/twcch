@@ -15,6 +15,11 @@
 -   M.B.A. in Insurance and Finance, National Taichung University of Science and Technology (2016–2018)
     -   Research Focus: Statistical regression analysis of corporate financial risk and tax avoidance behavior
 
+## Work Experience
+
+-   Junior Manager (Business Analyst), Fubon Life Insurance Co., Ltd. – Taipei, Taiwan (2022–2025)
+-   Specialist (Business Analyst), Nan Shan Life Insurance Co., Ltd. – Taipei, Taiwan (2020–2022)
+
 ## Expertise
 
 -	Application Domains
