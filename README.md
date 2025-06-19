@@ -6,18 +6,13 @@
 
 - Ph.D. in Engineering Science (Computer Science and Applications Division), National Cheng Kung University (2025–Present)
 
-#### Experience
-
-- Junior Manager, Fubon Life Insurance Co., Ltd. – Taipei, Taiwan (2022–2025)
-- Specialist, Nan Shan Life Insurance Co., Ltd. – Taipei, Taiwan (2020–2022)
-
 #### Expertise
 
 -   Technical Methods
     -   Machine Learning
     -   Deep Learning
     -   AI-based Anomaly Detection
-    -   Structured Data Analysis
+    -   Structured Big Data Analysis
 -   Application Domains
     -   Financial Statement Analytics
     -   Insurance Claims Analytics
