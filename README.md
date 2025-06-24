@@ -33,7 +33,7 @@
 
 ## Technologies and Frameworks
 
--	Python (PyTorch, TensorFlow, Flask, Flask-RESTful)
+-	Python (PyTorch, Flask, Flask-RESTful)
 -	Java (Spring Framework)
 -	SQL (PostgreSQL, MongoDB)
 
