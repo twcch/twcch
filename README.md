@@ -4,9 +4,9 @@
 
 [![Email](https://img.shields.io/badge/Email-222?style=flat&logo=Gmail)](mailto:twcch1218@gmail.com)
 [![Blog](https://img.shields.io/badge/Blog-222?style=flat&logo=medium)](https://twcch.io/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-222?style=flat&logo=logmein)](https://www.linkedin.com/in/twcch/)
 [![LeetCode](https://img.shields.io/badge/LeetCode-222?style=flat&logo=LeetCode)](https://leetcode.com/u/twcch1218/)
 [![Kaggle](https://img.shields.io/badge/Kaggle-222?style=flat&logo=keras)](https://www.kaggle.com/twcch1218/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-222?style=flat&logo=logmein)](https://www.linkedin.com/in/twcch/)
 
 ## Education
 
