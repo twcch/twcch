@@ -27,6 +27,6 @@
 
 -	Python (PyTorch, TensorFlow, Flask, Flask-RESTful)
 -	Java (Spring Framework)
--	SQL (PostgreSQL)
+-	SQL (PostgreSQL, MySQL)
 
 
