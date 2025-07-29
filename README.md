@@ -10,23 +10,23 @@
 
 ## Education
 
--   Ph.D. in Engineering Science (Computer Science and Applications Division), National Cheng Kung University (2025–Present)
+- Ph.D. in Engineering Science (Computer Science and Applications Division), National Cheng Kung University (2025–Present)
 
 ## Expertise
 
--	Application Domains
-	-	Financial Statement Analytics (e.g. earnings manipulation detection)
-	-	Insurance Claims Analytics (e.g. fraud pattern discovery)
-	-	Risk Signal Modeling (based on structured financial data)
--	Technical Methods
-	-	Machine Learning and Deep Learning
-	-	Anomaly Detection (AI-based and statistical approaches)
-	-	Structured Data Analysis at Scale
+- Application Domains
+	- Financial Statement Analytics (e.g. earnings manipulation detection)
+	- Insurance Claims Analytics (e.g. fraud pattern discovery)
+	- Risk Signal Modeling (based on structured financial data)
+- Technical Methods
+	- Machine Learning and Deep Learning
+	- Anomaly Detection (AI-based and statistical approaches)
+	- Structured Data Analysis at Scale
 
 ## Technologies and Frameworks
 
--	Python (PyTorch, Flask, Flask-RESTful)
--	Java (Spring Framework)
--	SQL (PostgreSQL, MySQL)
+- Python (PyTorch, Flask, Flask-RESTful)
+- Java (Spring Framework)
+- SQL (PostgreSQL, MySQL)
 
 
