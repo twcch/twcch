@@ -2,8 +2,6 @@
 
 ⭐ Motto: It may take 10000 hours, more or less; it is never too late.
 
-[![Blog](https://img.shields.io/badge/Blog-222?style=flat&logo=medium)](https://twcch.io/)
-
 ## Expertise
 
 - Application Domains
