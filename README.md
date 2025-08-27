@@ -16,4 +16,4 @@
 
 - Python (PyTorch, Flask, Flask-RESTful)
 - Java (Spring Framework)
-- SQL (PostgreSQL, MySQL)
+- SQL (PostgreSQL)
