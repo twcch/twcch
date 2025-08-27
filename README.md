@@ -10,7 +10,8 @@
 	- Risk Signal Modeling (based on structured financial data)
 - Technical Methods
 	- Structured Data Analysis at Scale
-	- Machine Learning and Deep Learning
+	- Machine Learning
+	- Deep Learning
 
 ## Technologies and Frameworks
 
