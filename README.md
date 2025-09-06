@@ -2,19 +2,14 @@
 
 ⭐ Motto: It may take 10000 hours, more or less; it is never too late.
 
-## Expertise
+## 專長
 
-- Application Domains
-	- Financial Statement Analytics (e.g. earnings manipulation detection)
-	- Insurance Claims Analytics (e.g. fraud pattern discovery)
-	- Risk Signal Modeling (based on structured financial data)
-- Technical Methods
-	- Structured Data Analysis at Scale
-	- Machine Learning
-	- Deep Learning
+- 結構化大數據分析
+- 機器學習
+- 深度學習
 
-## Technologies and Frameworks
+## 技能
 
-- Python (PyTorch, Flask, Flask-RESTful)
+- Python (Scikit-learn, PyTorch, Flask)
 - Java (Spring Framework)
-- SQL (PostgreSQL)
+- SQL (PostgreSQL, MySQL)
