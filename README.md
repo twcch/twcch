@@ -11,4 +11,4 @@
 
 - Python (Scikit-learn, PyTorch, Flask)
 - Java (Spring Boot, Spring Data JPA, Spring Security)
-- SQL (PostgreSQL, MySQL)
+- SQL (PostgreSQL)
