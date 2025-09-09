@@ -9,17 +9,4 @@
 ## 專長與技能
 
 - 財務與保險數據分析建模
-    - 應用場景: 財務報表數據建模、保險理賠業務數據建模
-    - 技術工具: Python, Scikit-Learn, PyTorch
-    - 資料管理: Ansi SQL, CSV, JSON
-    - 資料視覺化: Python (Matplotlib, Seaborn, Plotly)
 - Java Web 全端開發
-    - 後端: Java, Spring Boot, Spring Data JPA, Spring Security
-    - 前端: HTML, CSS, JavaScript
-    - 資料庫: PostgreSQL
-    - 其他: Git
-- 其他
-    - 辦公軟體: Microsoft Office
-    - 資料視覺化: Tableau Public
-    - 程式語言: C/C++
-    - 統計軟體: SAS, SPSS
