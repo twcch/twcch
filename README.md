@@ -11,7 +11,7 @@
 - 財務與保險數據分析及建模
 - Java Web 全端開發
 
-## 技能
+## 技術工具
 
 - 資料科學: Python, PyTorch, Scikit-learn
 - 網頁後端: Java, Spring Boot, Spring Data JPA, Spring Security
