@@ -17,4 +17,4 @@
 - 網頁後端: Java, Spring Boot, Spring Data JPA, Spring Security
 - 網頁前端: HTML, CSS, JavaScript
 - 資料庫: PostgreSQL
-- 其他: Git
+- 其他: Git, C/C++
