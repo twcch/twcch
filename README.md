@@ -6,7 +6,15 @@
 
 - (2025 – Present) 國立成功大學 工程科學系 博士生
 
-## 專長與技能
+## 專長
 
 - 財務與保險數據分析及建模
 - Java Web 全端開發
+
+## 技能
+
+- 資料科學: Python, Ansi SQL
+- 網頁後端: Java, Spring Boot, Spring Data JPA, Spring Security
+- 網頁前端: HTML, CSS, JavaScript
+- 資料庫: PostgreSQL
+- 其他: Git
