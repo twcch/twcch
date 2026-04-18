@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>謝志謙 Chih-Chien Hsieh — WeHelp 深度學習課程申請</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #f8f8f6;
+      --surface: #ffffff;
+      --text: #1a1a1a;
+      --text-sub: #4a4a4a;
+      --text-muted: #999;
+      --accent: #2563eb;
+      --accent-light: #e8f0fe;
+      --border: #e8e8e5;
+      --radius: 10px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Noto Sans TC', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.85;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Header ── */
+    .header {
+      background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 60%, #3b82f6 100%);
+      color: #fff;
+      padding: 64px 24px 52px;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+
+    .header .subtitle {
+      font-size: 0.95rem;
+      font-weight: 300;
+      opacity: 0.85;
+      margin-top: 8px;
+    }
+
+    /* ── Nav ── */
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255,255,255,0.94);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-inner {
+      max-width: 780px;
+      margin: 0 auto;
+      display: flex;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .nav-inner::-webkit-scrollbar { display: none; }
+
+    .nav a {
+      flex-shrink: 0;
+      padding: 13px 15px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--text-sub);
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .nav a:hover, .nav a.active {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+
+    /* ── Main ── */
+    .main {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 36px 24px 72px;
+    }
+
+    /* ── Section ── */
+    .section { margin-bottom: 40px; }
+
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 6px;
+    }
+
+    .section-label .num {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+
+    .section h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      letter-spacing: -0.01em;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 26px 28px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+    }
+
+    .card p {
+      color: var(--text-sub);
+      font-size: 0.93rem;
+      line-height: 1.9;
+    }
+
+    .card p + p {
+      margin-top: 14px;
+    }
+
+    .card.muted {
+      background: var(--bg);
+      border-color: var(--border);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      padding: 20px;
+    }
+
+    /* ── Footer ── */
+    .footer {
+      text-align: center;
+      padding: 32px 24px;
+      border-top: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 0.8rem;
+    }
+
+    /* ── Animations ── */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 640px) {
+      .header { padding: 48px 20px 40px; }
+      .header h1 { font-size: 1.75rem; }
+      .main { padding: 24px 16px 56px; }
+      .card { padding: 20px; }
+      .nav a { padding: 11px 11px; font-size: 0.75rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <h1>謝志謙 Chih-Chien Hsieh</h1>
+    <p class="subtitle">WeHelp 深度學習課程申請</p>
+  </header>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#q1">1. 簡介與動機</a>
+      <a href="#q2">2. 職業背景</a>
+      <a href="#q3">3. 時間安排</a>
+      <a href="#q4">4. 負面情緒</a>
+      <a href="#q5">5. 想解決的問題</a>
+      <a href="#q6">6. 為何學基礎</a>
+      <a href="#q7">7. 額外努力</a>
+      <a href="#q8">8. 其他</a>
+    </div>
+  </nav>
+
+  <main class="main">
+
+    <!-- 1 -->
+    <section id="q1" class="section fade-in">
+      <div class="section-label"><span class="num">1</span></div>
+      <h2>個人簡介和申請動機</h2>
+      <div class="card">
+        <p>我是謝志謙，目前就讀國立成功大學工程科學系博士班，主要是進行金融的時間序列研究。在進入博士班之前，我在壽險業 (南山人壽、富邦人壽) 累積了五年的商業分析經驗，負責理賠系統的邏輯規劃與需求分析。</p>
+        <p>申請 WeHelp 深度學習課程的動機，是希望透過系統化的基礎訓練，補強自己在底層實作上的紮實度。因為我的碩士與大學是唸商學院，對於神經網路從零實作、反向傳播的手刻細節、以及線性代數與模型架構之間的深層連結，理解還不夠扎實。WeHelp 從線性代數打底、手刻神經網路、再到經典模型實作的訓練路線，正好切中我想補的短板。我相信這些底層功夫會讓我在博士研究中設計模型時更有根據，而不只是憑直覺調架構。</p>
+      </div>
+    </section>
+
+    <!-- 2 -->
+    <section id="q2" class="section fade-in">
+      <div class="section-label"><span class="num">2</span></div>
+      <h2>目前的職業背景，若是剛畢業，畢業的科系為何？</h2>
+      <div class="card">
+        <p>目前我是成大工程科學系博士生，同時擔任實驗室研究助理。研究工作包含: 開發基於 Transformer 與 GNN 的金融時間序列預測模型、使用 BERT 與 GPT 建構漂綠行為檢測模型、以及協助上海商業銀行建置供應鏈金融精準推薦系統和豐原醫院的 NLP/RAG 智慧醫療問答系統。</p>
+        <p>在此之前，我在富邦人壽擔任專案襄理 (2022–2025)，帶領 13 人跨部門團隊完成理賠系統規則盤點與標準化；更早則在南山人壽擔任 Business Analyst (2020–2022)。碩士畢業於國立臺中科技大學保險金融管理系，研究主題為企業財務風險與避稅行為的統計分析。</p>
+        <p>技術面上，我以 Python/PyTorch 為主要開發工具，具備 Django、Java/Spring 的全端開發經驗，也有 GCP 部署和 Git 協作的實戰基礎。</p>
+      </div>
+    </section>
+
+    <!-- 3 -->
+    <section id="q3" class="section fade-in">
+      <div class="section-label"><span class="num">3</span></div>
+      <h2>如果參與這個訓練，會怎麼安排學習時間？</h2>
+      <div class="card">
+        <p>WeHelp 深度學習課程的每週線上會議安排在週一晚上 21:00，對我來說很理想，因為白天可以專注於博士班的研究工作。</p>
+        <p>我預計的時間配置如下: 週一至週五白天進行實驗室研究，晚上 19:00–23:00 投入 WeHelp 課程學習與任務開發 (約 4 小時/天)；週末則可以全天投入，每天 6–8 小時。這樣每週大約可以確保 30–40 小時的學習時間。</p>
+        <p>我在富邦人壽在職期間曾同時準備 PMP 認證與自學程式開發，對於邊工作邊進修的節奏有經驗。加上我本身已具備 Python 和 PyTorch 基礎，第一階段的部分內容可能進度較快，多出來的時間可以用來強化線性代數理論和手刻實作的部分，這恰好是我最需要加強的地方。</p>
+      </div>
+    </section>
+
+    <!-- 4 -->
+    <section id="q4" class="section fade-in">
+      <div class="section-label"><span class="num">4</span></div>
+      <h2>請描述一件產生明顯負面情緒的經歷，如何處理該情緒？</h2>
+      <div class="card">
+        <p>在富邦人壽帶領 13 人跨部門團隊盤點理賠規則時，曾經歷過一段非常挫折的時期。不同部門對同一條理賠規則的解讀截然不同，會議上經常各執一詞、互不退讓。身為專案負責人，我夾在中間承受很大的壓力，一度覺得這個專案根本不可能達成共識，甚至懷疑自己是否有能力推動這件事。</p>
+        <p>當時我的處理方式是: 先承認自己確實感到焦慮和挫敗，而不是假裝沒事。接著我把問題拆解——與其試圖在一次會議中解決所有分歧，不如先釐清哪些規則有共識、哪些有爭議，把爭議點具體化為可驗證的案例。我逐一約談各部門的關鍵人員，用實際的理賠案例來對齊認知，而不是在抽象的規則文字上爭論。最終這個專案順利完成，建立了統一的邏輯知識庫。</p>
+        <p>這段經歷讓我學到: 負面情緒本身不是問題，把情緒轉化為具體行動才是關鍵。這個心態在我後來轉換跑道、面對研究瓶頸時也一直很受用。</p>
+      </div>
+    </section>
+
+    <!-- 5 -->
+    <section id="q5" class="section fade-in">
+      <div class="section-label"><span class="num">5</span></div>
+      <h2>最想使用自己開發的深度學習模型解決什麼問題？</h2>
+      <div class="card">
+        <p>我最想解決的問題是金融時間序列的波動率預測。</p>
+        <p>股價波動率是風險管理和衍生品定價的核心，但金融時間序列具有高噪聲、非平穩、regime switching 等特性，傳統計量模型 (如 GARCH) 和純深度學習模型各有局限。我目前的博士研究正在開發一個結合 decomposition 和 residual fusion 的混合架構，但在實驗過程中發現，很多時候模型效果的好壞取決於對底層機制的理解深度——為什麼某種 fusion 策略有效、為什麼 learned gating 反而不如 direct additive fusion，這些問題如果對於深度學習原理有很深入的理解，很難真正回答。</p>
+      </div>
+    </section>
+
+    <!-- 6 -->
+    <section id="q6" class="section fade-in">
+      <div class="section-label"><span class="num">6</span></div>
+      <h2>若終究無法達到 OpenAI 的程度，為何要學習基礎模型的實作？</h2>
+      <div class="card">
+        <p>因為目標從來就不是「成為下一個 OpenAI」，而是成為能理解、改造、並有效運用這些技術的人。</p>
+        <p>以我自己的研究為例，我在做金融時間序列預測時，不需要從零 pre-train 一個 foundation model，但我需要理解 Transformer 的 attention 機制為什麼在長序列上會退化、需要知道 embedding 層的數學意義才能設計好的特徵工程、需要看得懂反向傳播的梯度流向才能診斷模型為什麼不收斂。這些能力都建立在對基礎模型實作的理解之上。</p>
+        <p>就像一個外科醫師不需要自己製造手術刀，但必須理解刀的結構和特性，才能在手術中做出正確判斷。深度學習也是一樣：產業中真正有價值的工程師，不是只會 call API 的人，而是能根據問題特性選擇、修改、甚至設計模型架構的人。基礎模型的實作訓練，培養的正是這種判斷力。</p>
+      </div>
+    </section>
+
+    <!-- 7 -->
+    <section id="q7" class="section fade-in">
+      <div class="section-label"><span class="num">7</span></div>
+      <h2>從上次提出申請至今，多做了哪些努力？</h2>
+      <div class="card muted">
+        <p>(第一次申請不用回答，跳過。)</p>
+      </div>
+    </section>
+
+    <!-- 8 -->
+    <section id="q8" class="section fade-in">
+      <div class="section-label"><span class="num">8</span></div>
+      <h2>其他想要對我們說的事情？</h2>
+      <div class="card">
+        <p>我的背景可能跟多數申請者不太一樣——我不是要「轉職」進入深度學習領域，而是已經在這個領域做研究，回過頭來想把基礎打得更紮實。</p>
+        <p>WeHelp 的訓練設計吸引我的地方，除了從線性代數打底的課程規劃之外，更重要的是「非手把手」的任務式學習模式。我在過去的經驗中深刻體會到，真正的技術能力都是在解決具體問題的過程中長出來的，而不是在課堂上聽出來的。WeHelp 的每日進度報告和嚴格的檢核機制，也很符合我對自己的要求。</p>
+        <p>另外，我對 WeHelp 社群的多元背景很感興趣。我自己是從保險業 BA 轉向資料科學的「雙棲」路線，很期待跟不同背景的學員交流，互相激盪出不同的思考角度。也希望我在金融領域和專案管理上的經驗，能對社群有所貢獻。</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>謝志謙 Chih-Chien Hsieh</p>
+  </footer>
+
+  <script>
+    // Fade-in on scroll
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add('visible'); });
+      },
+      { threshold: 0.08 }
+    );
+    document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
+
+    // Active nav highlight
+    const navLinks = document.querySelectorAll('.nav a');
+    const secObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            navLinks.forEach((l) => l.classList.remove('active'));
+            const link = document.querySelector(`.nav a[href="#${e.target.id}"]`);
+            if (link) link.classList.add('active');
+          }
+        });
+      },
+      { rootMargin: '-30% 0px -70% 0px' }
+    );
+    document.querySelectorAll('.section').forEach((s) => secObserver.observe(s));
+  </script>
+
+</body>
+</html>
