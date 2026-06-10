@@ -18,10 +18,10 @@
 
 ## Featured Projects
 
-- RevTransLSTM-AR  
+- [RevTransLSTM-AR](https://github.com/twcch/RevTransLSTM-AR)  
   Fair benchmark for non-stationary stock forecasting with Transformer, autoregressive LSTM, and RevIN.
 
-- DeReFusion  
+- [DeReFusion](https://github.com/twcch/DeReFusion)  
   Decomposition–Residual Fusion forecaster and benchmark for non-stationary financial time series.
 
 ## Links
