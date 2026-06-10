@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chih-Chien Hsieh | 謝志謙</title>
+  <meta name="description" content="Chih-Chien Hsieh (謝志謙) is a Ph.D. Student at National Cheng Kung University, working on time series forecasting.">
+  <style>
+    :root {
+      --bg: #faf9f5;
+      --bg-deep: #ece8df;
+      --surface: rgba(255, 255, 255, 0.7);
+      --surface-strong: rgba(255, 255, 255, 0.94);
+      --ink: #1f1e1d;
+      --muted: #6f6e69;
+      --line: rgba(40, 36, 32, 0.12);
+      --accent: #d97757;
+      --accent-soft: #f0ddd2;
+      --shadow: 0 24px 80px rgba(40, 30, 22, 0.10);
+      --radius-xl: 28px;
+      --radius-lg: 20px;
+      --radius-md: 14px;
+      --max-width: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Avenir Next", "STFangsong", "FangSong", "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 15% 20%, rgba(255, 255, 255, 0.9), transparent 34%),
+        radial-gradient(circle at 88% 15%, rgba(217, 119, 87, 0.16), transparent 24%),
+        linear-gradient(180deg, #faf9f5 0%, #f3f0e8 42%, #ece8df 100%);
+      line-height: 1.65;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .inline-link {
+      color: var(--accent);
+      text-decoration: underline;
+      text-decoration-thickness: 1.5px;
+      text-underline-offset: 3px;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    .page {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .page::before,
+    .page::after {
+      content: "";
+      position: fixed;
+      inset: auto;
+      border-radius: 999px;
+      pointer-events: none;
+      z-index: -1;
+      filter: blur(10px);
+    }
+
+    .page::before {
+      width: 320px;
+      height: 320px;
+      top: -80px;
+      right: -80px;
+      background: rgba(217, 119, 87, 0.14);
+    }
+
+    .page::after {
+      width: 280px;
+      height: 280px;
+      bottom: 12%;
+      left: -120px;
+      background: rgba(255, 255, 255, 0.32);
+    }
+
+    .container {
+      width: min(calc(100% - 40px), var(--max-width));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(20px);
+      background: rgba(245, 237, 227, 0.72);
+      border-bottom: 1px solid rgba(53, 31, 18, 0.08);
+    }
+
+    .topbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 16px 0;
+    }
+
+    .brand {
+      font-family: "Iowan Old Style", "Palatino Linotype", serif;
+      font-size: 1.1rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .hero {
+      padding: 56px 0 32px;
+    }
+
+    .hero-panel {
+      display: grid;
+      grid-template-columns: 1.32fr 0.68fr;
+      gap: 28px;
+      align-items: stretch;
+    }
+
+    .hero-copy,
+    .hero-photo {
+      position: relative;
+      border-radius: var(--radius-xl);
+      background: var(--surface);
+      border: 1px solid rgba(255, 255, 255, 0.42);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .interactive-card {
+      position: relative;
+      isolation: isolate;
+      transition: transform 0.28s ease, border-color 0.28s ease, box-shadow 0.28s ease;
+      --mx: 50%;
+      --my: 50%;
+      --tilt-x: 0deg;
+      --tilt-y: 0deg;
+      --lift: 0px;
+    }
+
+    .interactive-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      pointer-events: none;
+      background:
+        radial-gradient(circle at var(--mx) var(--my), rgba(255, 255, 255, 0.9), rgba(255, 247, 242, 0.48) 18%, rgba(217, 119, 87, 0.12) 36%, transparent 62%);
+      opacity: 0;
+      transition: opacity 0.22s ease;
+      z-index: 0;
+    }
+
+    .interactive-card > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-copy {
+      padding: 42px;
+      backdrop-filter: blur(18px);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.64);
+      border: 1px solid rgba(53, 31, 18, 0.08);
+      color: var(--muted);
+      font-size: 0.84rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 20px 0 24px;
+      font-family: "Iowan Old Style", "Palatino Linotype", serif;
+      /*font-size: clamp(3rem, 6vw, 5.2rem);*/
+      font-size: clamp(2.4rem, 5vw, 2.2rem);
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+    }
+
+    .name-zh {
+      display: inline;
+      margin-left: 10px;
+      font-size: clamp(1.05rem, 1.9vw, 1.35rem);
+      letter-spacing: 0.04em;
+      color: var(--muted);
+      font-family: "STFangsong", "FangSong", "Songti SC", serif;
+      font-weight: 500;
+    }
+
+    .cn-fangsong {
+      font-family: "STFangsong", "FangSong", "Songti SC", serif;
+    }
+
+    .lead {
+      margin: 0 0 14px;
+      max-width: 60ch;
+      color: var(--muted);
+      font-size: 1.06rem;
+    }
+
+    .contact-grid {
+      display: flex;
+      gap: 14px;
+      margin: 28px 0 16px;
+    }
+
+    .contact-card {
+      padding: 14px 16px;
+      background: rgba(255, 255, 255, 0.56);
+      border: 1px solid rgba(53, 31, 18, 0.07);
+      border-radius: var(--radius-md);
+    }
+
+    .contact-card span {
+      display: block;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 8px;
+    }
+
+    .button,
+    .ghost-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 18px;
+      border-radius: 999px;
+      font-weight: 600;
+      transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+    }
+
+    .button {
+      background: var(--accent);
+      color: #fffaf7;
+      box-shadow: 0 16px 32px rgba(217, 119, 87, 0.30);
+    }
+
+    .ghost-button {
+      border: 1px solid rgba(53, 31, 18, 0.12);
+      background: rgba(255, 255, 255, 0.45);
+    }
+
+    .button:hover,
+    .ghost-button:hover {
+      transform: translateY(-1px);
+    }
+
+    .hero-photo {
+      min-height: 440px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.08), rgba(34,24,19,0.12)),
+        #d97757;
+    }
+
+    .hero-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .section {
+      padding: 54px 0 10px;
+    }
+
+    .section-title {
+      margin-bottom: 22px;
+    }
+
+    .section-title h2 {
+      margin: 0;
+      font-family: "Iowan Old Style", "Palatino Linotype", serif;
+      font-size: clamp(1.9rem, 4vw, 3rem);
+      letter-spacing: -0.03em;
+    }
+
+    .grid-two {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      padding: 24px;
+      border-radius: var(--radius-lg);
+      background: var(--surface-strong);
+      border: 1px solid var(--line);
+      box-shadow: 0 18px 44px rgba(52, 27, 16, 0.07);
+    }
+
+    .card h3 {
+      margin: 0 0 6px;
+      font-size: 1.2rem;
+    }
+
+    .education-school {
+      margin-bottom: 14px;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 0.94rem;
+      margin-bottom: 12px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .tag {
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: rgba(217, 119, 87, 0.12);
+      color: #b35a3c;
+      font-size: 0.9rem;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 16px;
+    }
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 160px 1fr;
+      gap: 18px;
+      padding: 22px;
+      border-radius: var(--radius-lg);
+      background: var(--surface-strong);
+      border: 1px solid var(--line);
+      box-shadow: 0 18px 44px rgba(52, 27, 16, 0.07);
+    }
+
+    .timeline-date {
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 0.95rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .timeline-item h3 {
+      margin: 0 0 4px;
+      font-size: 1.16rem;
+    }
+
+    .timeline-item p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .papers,
+    .papers-secondary {
+      display: grid;
+      gap: 14px;
+    }
+
+    .papers {
+      grid-template-columns: 1fr;
+    }
+
+    .papers-secondary {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      margin-top: 14px;
+    }
+
+    .papers-secondary.card-rail {
+      grid-template-columns: none;
+      grid-auto-flow: column;
+      grid-auto-columns: minmax(280px, 36vw);
+      align-items: stretch;
+    }
+
+    .other-pubs-carousel {
+      position: relative;
+    }
+
+    .card-rail {
+      position: relative;
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: minmax(280px, 36vw);
+      gap: 18px;
+      overflow-x: auto;
+      padding: 6px 8px 18px;
+      margin: 0;
+      scroll-snap-type: x proximity;
+      scrollbar-width: none;
+      cursor: grab;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .carousel-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 44px;
+      height: 44px;
+      border: 0;
+      border-radius: 999px;
+      background: rgba(255, 250, 246, 0.92);
+      color: var(--accent);
+      box-shadow: 0 16px 32px rgba(52, 27, 16, 0.12);
+      cursor: pointer;
+      z-index: 2;
+      transition: transform 0.2s ease, background 0.2s ease, opacity 0.2s ease;
+    }
+
+    .carousel-arrow:hover {
+      transform: translateY(-50%) scale(1.04);
+      background: rgba(255, 252, 249, 1);
+    }
+
+    .carousel-arrow.is-disabled {
+      opacity: 0.35;
+    }
+
+    .carousel-arrow-prev {
+      left: -18px;
+    }
+
+    .carousel-arrow-next {
+      right: -18px;
+    }
+
+    .card-rail::-webkit-scrollbar {
+      display: none;
+    }
+
+    .card-rail.is-dragging {
+      cursor: grabbing;
+      scroll-snap-type: none;
+    }
+
+    .card-rail > * {
+      scroll-snap-align: start;
+      min-width: 0;
+    }
+
+    .card-rail.timeline {
+      grid-auto-columns: minmax(320px, 43vw);
+    }
+
+    .card-rail.list-grid {
+      grid-auto-columns: minmax(280px, 30vw);
+    }
+
+    .paper {
+      padding: 18px 20px;
+      border-radius: 20px;
+      background: linear-gradient(180deg, rgba(255, 251, 247, 0.96), rgba(255, 245, 237, 0.9));
+      border: 1px solid rgba(53, 31, 18, 0.08);
+      box-shadow: 0 16px 34px rgba(52, 27, 16, 0.06);
+      transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+    }
+
+    .paper-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 18px;
+      margin-bottom: 8px;
+    }
+
+    .paper-venue {
+      flex: 0 0 auto;
+      display: inline-flex;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: #b35a3c;
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .paper-venue.arxiv {
+      background: rgba(101, 86, 77, 0.14);
+      color: var(--muted);
+    }
+
+    .paper-title-line {
+      margin: 0;
+      color: var(--ink);
+      font-size: 1.02rem;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+
+    .paper-author-line {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .paper-title-line em {
+      font-style: italic;
+    }
+
+    .paper-inline-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .paper-inline-links a {
+      color: var(--accent);
+      font-size: 0.92rem;
+      text-decoration: underline;
+      text-decoration-thickness: 1.2px;
+      text-underline-offset: 2px;
+    }
+
+    .author-me {
+      color: var(--accent);
+      font-weight: 400;
+    }
+
+    .subpapers {
+      margin-top: 18px;
+      padding: 18px 20px;
+      border-radius: 18px;
+      background: rgba(255, 250, 246, 0.82);
+      border: 1px solid rgba(53, 31, 18, 0.08);
+      box-shadow: 0 14px 30px rgba(52, 27, 16, 0.05);
+    }
+
+    .subpapers h3 {
+      margin: 0 0 10px;
+      font-size: 1rem;
+    }
+
+    .subsection-label {
+      margin: 18px 0 8px;
+      font-size: 0.95rem;
+      color: var(--muted);
+      letter-spacing: 0.02em;
+      text-transform: none;
+    }
+
+    .subpaper-list {
+      display: grid;
+      gap: 8px;
+    }
+
+    .subpaper-item {
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+
+    .list-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .list-card ul {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--muted);
+    }
+
+    .list-card li + li {
+      margin-top: 8px;
+    }
+
+    footer {
+      padding: 50px 0 70px;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    @media (max-width: 980px) {
+      .hero-panel,
+      .grid-two,
+      .list-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .papers-secondary {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-photo {
+        min-height: 380px;
+      }
+
+      .timeline-item {
+        grid-template-columns: 1fr;
+      }
+
+      .card-rail,
+      .card-rail.timeline,
+      .card-rail.list-grid {
+        grid-auto-flow: row;
+        grid-auto-columns: unset;
+        overflow: visible;
+        padding: 0;
+        margin: 0;
+        cursor: default;
+      }
+
+      .carousel-arrow {
+        display: none;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .topbar-inner,
+      .section-title,
+      .paper-top {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .hero {
+        padding-top: 32px;
+      }
+
+      .hero-copy {
+        padding: 26px;
+      }
+
+      .contact-grid {
+        flex-direction: column;
+      }
+
+      .container {
+        width: min(calc(100% - 24px), var(--max-width));
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <a class="brand" href="#top">Chih-Chien Hsieh</a>
+        <nav class="nav">
+          <a href="#about">Education</a>
+          <a href="#experience">Experience</a>
+          <a href="#publications">Publications</a>
+          <a href="#service">Teaching &amp; Honors</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+          <div class="container hero-panel">
+          <div class="hero-copy reveal">
+            <h1>Chih-Chien Hsieh<span class="name-zh">(謝志謙)</span></h1>
+            <p class="lead">
+              I am a Ph.D. candidate at The Chinese University of Hong Kong, advised by
+              <a href="https://jiaya.me/" target="_blank" rel="noreferrer">Prof. Jiaya Jia</a>. I completed
+              my undergraduate study at Xi'an Jiaotong University in the Special Class for the Gifted Young
+              (<span class="cn-fangsong">少年班</span>) and the Qian Xuesen Honor Class (<span class="cn-fangsong">钱学森班</span>).
+            </p>
+            <p class="lead">
+              I am currently interested in foundation large language models, especially mid-training
+              and agentic reinforcement learning.
+            </p>
+
+            <div class="contact-grid">
+            </div>
+
+            <div class="hero-actions">
+              <a class="button" href="mailto:jingyao.li@link.cuhk.edu.hk">Get in Touch · jingyao.li@link.cuhk.edu.hk</a>
+              <a class="ghost-button" href="Jingyao_Li.pdf" target="_blank" rel="noreferrer">View CV</a>
+            </div>
+          </div>
+
+          <div class="hero-photo reveal">
+            <img src="https://avatars.githubusercontent.com/u/24428408?v=4" alt="Portrait of Chih-Chien Hsieh">
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-title reveal">
+            <h2>Education</h2>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item reveal">
+              <div class="timeline-date">Sep. 2025 - Present</div>
+              <div>
+                <h3>National Cheng Kung University (國立成功大學)</h3>
+                <p>
+                  Ph.D. in Engineering Science (Computer Science and Its Applications). I am a research member of the <b>Data Science and Computational Thinking Lab</b> at NCKU, under the supervision of <a class="inline-link" href="https://researchoutput.ncku.edu.tw/en/persons/mu-yen-chen/" target="_blank" rel="noreferrer">Prof. Mu-Yen Chen</a>.
+                </p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="container">
+          <div class="section-title reveal">
+            <h2>Experience</h2>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item reveal">
+              <div class="timeline-date">Sep. 2025 - <br> Present</div>
+              <div>
+                <h3>Data Science and Computational Thinking Lab at NCKU · Research Assistant</h3>
+                <p>
+                  Worked on query-as-computation for large models and first-authored
+                  <em>QuickLLaMA: Query-aware Inference Acceleration for Large Language Models</em>.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item reveal">
+              <div class="timeline-date">Apr. 2022 - <br> Jul. 2025</div>
+              <div>
+                <h3>Fubon Life Insurance Co., Ltd. (富邦人壽股份有限公司) · Business Analyst</h3>
+                <p>
+                  Worked on query-as-computation for large models and first-authored
+                  <em>QuickLLaMA: Query-aware Inference Acceleration for Large Language Models</em>.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item reveal">
+              <div class="timeline-date">Apr. 2020 - <br> Mar. 2022</div>
+              <div>
+                <h3>Nanshan Life Insurance Co., Ltd. (南山人壽股份有限公司) · Business Analyst</h3>
+                <p>
+                  Worked on query-as-computation for large models and first-authored
+                  <em>QuickLLaMA: Query-aware Inference Acceleration for Large Language Models</em>.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="publications">
+        <div class="container">
+          <div class="section-title reveal">
+            <h2>Publications</h2>
+          </div>
+
+          <div class="papers">
+
+            <article class="paper reveal">
+              <div class="paper-top">
+                <h3 class="paper-title-line">DeReFusion: A Systematic Investigation of Soft Computing Fusion Strategies for Financial Time Series Forecasting via Decomposition-Residual Architecture</h3>
+                <!-- <span class="paper-venue">ASOC 2026</span> -->
+              </div>
+              <p class="paper-author-line"><span class="author-me">Chih-Chien Hsieh</span>, Mu-Yen Chen</p>
+              <div class="paper-inline-links">
+                Paper · <a href="https://github.com/twcch/DeReFusion" target="_blank">Code</a>
+              </div>
+            </article>
+
+            <article class="paper reveal">
+              <div class="paper-top">
+                <h3 class="paper-title-line">A Fair Benchmark of Deep Models for Non-Stationary Stock Price Forecasting: RevTransLSTM-AR as a Complexity Probe</h3>
+                <!-- <span class="paper-venue">ASOC 2026</span> -->
+              </div>
+              <p class="paper-author-line">Feng-Jui Hsu, <span class="author-me">Chih-Chien Hsieh</span>, Shih-Chieh Lin, Chen-En Lan, Mu-Yen Chen</p>
+              <div class="paper-inline-links">
+                Paper · <a href="https://github.com/twcch/RevTransLSTM-AR" target="_blank">Code</a>
+              </div>
+            </article>
+
+          </div>
+
+          <!-- <h3 class="subsection-label reveal">Other Publications</h3>
+
+          <div class="other-pubs-carousel reveal">
+            <button class="carousel-arrow carousel-arrow-prev" type="button" aria-label="Scroll other publications left">‹</button>
+            <button class="carousel-arrow carousel-arrow-next" type="button" aria-label="Scroll other publications right">›</button>
+
+            <div class="papers-secondary card-rail">
+
+            <article class="paper reveal interactive-card">
+              <div class="paper-top">
+                <h3 class="paper-title-line">MR-BEN: A Comprehensive Meta-Reasoning Benchmark for Large Language Models.</h3>
+                <span class="paper-venue">2024</span>
+              </div>
+              <div class="paper-inline-links">
+                Paper · Code
+              </div>
+            </article>
+
+            </div>
+          </div> -->
+        </div>
+      </section>
+
+      <section class="section" id="service">
+        <div class="container">
+          <div class="section-title reveal">
+            <h2>Teaching &amp; Honors</h2>
+          </div>
+
+          <div class="list-grid">
+            <div class="card list-card reveal">
+              <h3>Teaching</h3>
+              <ul>
+                <li>Generative Artificial Intelligence, 2026 - Teaching Assistant (Instructor: Prof. Mu-Yen Chen)</li>
+                <li>Machine Learning, 2026 - Teaching Assistant (Instructor: Prof. Mu-Yen Chen)</li>
+                <li>Artificial Intelligence, 2025 - Teaching Assistant (Instructor: Prof. Mu-Yen Chen)</li>
+                <li>Financial Case Analysis, 2017 - Teaching Assistant (Instructor: Prof. Feng-Jui Hsu)</li>
+              </ul>
+            </div>
+
+            <div class="card list-card reveal">
+              <h3>Awards</h3>
+              <ul>
+                <li>National Scholarship, 2020</li>
+                <li>Meritorious Winner, American Mathematical Contest in Modeling, 2019</li>
+                <li>First Prize, China Undergraduate Physics Tournament, 2018</li>
+                <li>Second Prize, Xi'an Jiaotong University Challenge Cup, 2019</li>
+              </ul>
+            </div>
+
+            <div class="card list-card reveal">
+              <h3>Leadership</h3>
+              <ul>
+                <li>Vice President, Youth Volunteers Association, 2019-2020</li>
+                <li>Minister of the Secretariat, Youth Volunteers Association, 2018-2019</li>
+                <li>Administrative Department Member, Youth Volunteers Association, 2017-2018</li>
+                <li>Secretary of the Student Union, Suzhou Middle School, 2016-2017</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="reveal">
+      <div class="container">
+        <p>Chih-Chien Hsieh</p>
+      </div>
+    </footer>
+  </div>
+  <script>
+    const rails = document.querySelectorAll('#publications .papers-secondary.card-rail');
+
+    rails.forEach((rail) => {
+      const carousel = rail.closest('.other-pubs-carousel');
+      const prevButton = carousel ? carousel.querySelector('.carousel-arrow-prev') : null;
+      const nextButton = carousel ? carousel.querySelector('.carousel-arrow-next') : null;
+      let isPointerDown = false;
+      let startX = 0;
+      let startScrollLeft = 0;
+
+      const updateArrows = () => {
+        if (!prevButton || !nextButton || window.innerWidth <= 980) return;
+        const maxScrollLeft = Math.max(rail.scrollWidth - rail.clientWidth, 0);
+        prevButton.classList.toggle('is-disabled', rail.scrollLeft <= 4);
+        nextButton.classList.toggle('is-disabled', rail.scrollLeft >= maxScrollLeft - 4);
+      };
+
+      rail.addEventListener('pointerdown', (event) => {
+        if (window.innerWidth <= 980) return;
+        if (event.target.closest('a')) return;
+        isPointerDown = true;
+        startX = event.clientX;
+        startScrollLeft = rail.scrollLeft;
+        rail.classList.add('is-dragging');
+        rail.setPointerCapture(event.pointerId);
+      });
+
+      rail.addEventListener('pointermove', (event) => {
+        if (!isPointerDown) return;
+        const dx = event.clientX - startX;
+        rail.scrollLeft = startScrollLeft - dx;
+        updateArrows();
+      });
+
+      const endDrag = (event) => {
+        if (!isPointerDown) return;
+        isPointerDown = false;
+        rail.classList.remove('is-dragging');
+        if (event.pointerId !== undefined && rail.hasPointerCapture(event.pointerId)) {
+          rail.releasePointerCapture(event.pointerId);
+        }
+      };
+
+      rail.addEventListener('pointerup', endDrag);
+      rail.addEventListener('pointercancel', endDrag);
+      rail.addEventListener('lostpointercapture', () => {
+        isPointerDown = false;
+        rail.classList.remove('is-dragging');
+      });
+
+      rail.addEventListener('wheel', (event) => {
+        if (window.innerWidth <= 980) return;
+        if (Math.abs(event.deltaY) <= Math.abs(event.deltaX)) return;
+        event.preventDefault();
+        rail.scrollLeft += event.deltaY;
+        updateArrows();
+      }, { passive: false });
+
+      rail.addEventListener('scroll', updateArrows, { passive: true });
+
+      if (prevButton && nextButton) {
+        const getStep = () => Math.max(rail.clientWidth * 0.78, 320);
+        prevButton.addEventListener('click', () => {
+          rail.scrollBy({ left: -getStep(), behavior: 'smooth' });
+        });
+        nextButton.addEventListener('click', () => {
+          rail.scrollBy({ left: getStep(), behavior: 'smooth' });
+        });
+      }
+
+      updateArrows();
+    });
+  </script>
+</body>
+</html>
