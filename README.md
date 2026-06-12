@@ -28,4 +28,3 @@
 
 - GitHub: @twcch
 - Website: twcch.github.io
-- Email: twcch1218 [at] gmail.com
