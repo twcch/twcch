@@ -10,7 +10,8 @@
 
 ## Technical Skills
 
-- ML, DL, TSF, NLP, LLM/RAG, Big Data
+- Machine Learning, Deep Learning, Large Language Model
+- Time Series Forcasting, Nature Language Processing
 - Backend: Java/Spring, Python/Django
 - Fontend: HTML/CSS/Bootstrap, JavaScript
 - Database: PostgreSQL, Neo4j
