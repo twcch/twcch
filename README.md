@@ -5,12 +5,12 @@
 ## About Me
 
 - Ph.D. student at National Cheng Kung University, Taiwan
-- Research focus: deep learning, time-series forecasting, and large language model
-- Currently working on financial time-series forecasting
+- Research focus: Time Series AI, Spatiotemporal AI, Multimodal AI
+- Currently working on financial time-series analysis
 
 ## Technical Skills
 
-- Machine Learning, Deep Learning, Time Series Forcasting, Nature Language Processing, Large Language Model, Big Data
+- ML, DL, TSF, NLP, LLM/RAG, Big Data
 - Backend: Java/Spring, Python/Django
 - Fontend: HTML/CSS/Bootstrap, JavaScript
 - Database: PostgreSQL, Neo4j
