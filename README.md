@@ -26,5 +26,5 @@
 
 ## Links
 
-- GitHub: @twcch
+- GitHub: [@twcch](https://github.com/twcch)
 - Website: [https://twcch.github.io/](https://twcch.github.io/)
