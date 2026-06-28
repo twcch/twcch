@@ -8,14 +8,15 @@
 - Research focus: Time Series AI, Spatiotemporal AI, Multimodal AI
 - Currently working on financial time-series analysis
 
+![Tech stack](https://skillicons.dev/icons?i=py,pytorch,django,flask,fastapi,java,spring,html,css,bootstrap,js,postgres,docker,git,github,gcp,vscode,pycharm,idea,eclipse&theme=light)
+
 ## Technical Skills
 
-- Machine Learning, Deep Learning, Large Language Model
-- Time Series Forcasting, Nature Language Processing
-- Backend: Java/Spring, Python/Django
-- Fontend: HTML/CSS/Bootstrap, JavaScript
-- Database: PostgreSQL, Neo4j
-- Other: Git/Github, Google Cloud Platform, Google Colab
+- **AI / ML**: Machine Learning, Deep Learning, Large Language Model
+- **Domains**: Time Series Forecasting, Natural Language Processing
+
+![Neo4j](https://img.shields.io/badge/Neo4j-008CC1?logo=neo4j&logoColor=white)
+![Google Colab](https://img.shields.io/badge/Google%20Colab-F9AB00?logo=googlecolab&logoColor=white)
 
 ## Featured Projects
 
