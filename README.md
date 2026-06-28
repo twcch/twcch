@@ -15,9 +15,9 @@
 ## Links
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/twcch)
-[![Blog](https://img.shields.io/badge/Blog-8A2BE2?style=for-the-badge&logo=googlechrome&logoColor=white)](https://twcch.github.io/)
+[![Blog](https://img.shields.io/badge/Blog-8A2BE2?style=for-the-badge&logo=blogger&logoColor=white)](https://twcch.github.io/)
 [![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:twcch1218@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/twcch/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=logmein&logoColor=white)](https://www.linkedin.com/in/twcch/)
 
 
 <!-- [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/twcch)
