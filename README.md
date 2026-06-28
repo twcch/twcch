@@ -2,6 +2,9 @@
 
 ⭐ Motto: It may take 10000 hours, more or less; it is never too late.
 
+  [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/twcch)
+  [![Blog](https://img.shields.io/badge/twcch.github.io-4285F4?style=flat&logo=googlechrome&logoColor=white)](https://twcch.github.io/)
+
 ## About Me
 
 - Ph.D. student at National Cheng Kung University, Taiwan
@@ -11,8 +14,3 @@
 ## Skills
 
 ![Tech stack](https://skillicons.dev/icons?i=py,pytorch,django,flask,fastapi,java,spring,html,css,bootstrap,js,postgres,docker,git,github,gcp,vscode,pycharm,idea,eclipse&theme=light)
-
-## Links
-
-- GitHub: [@twcch](https://github.com/twcch)
-- Website: [https://twcch.github.io/](https://twcch.github.io/)
