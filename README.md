@@ -6,7 +6,9 @@
 
 - Ph.D. student at National Cheng Kung University, Taiwan
 - Research focus: Time Series AI, Spatiotemporal AI, Multimodal AI
-- Currently working on financial time-series analysis
+- Specialty: Time Series Forecasting, Natural Language Processing, Large Language Models
+
+## Skills
 
 ![Tech stack](https://skillicons.dev/icons?i=py,pytorch,django,flask,fastapi,java,spring,html,css,bootstrap,js,postgres,docker,git,github,gcp,vscode,pycharm,idea,eclipse&theme=light)
 
