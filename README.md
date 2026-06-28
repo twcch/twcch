@@ -13,4 +13,4 @@
 
 ## Skills
 
-![Tech stack](https://skillicons.dev/icons?i=py,pytorch,django,flask,fastapi,java,spring,html,css,bootstrap,js,postgres,docker,git,github,gcp,vscode,pycharm,idea,eclipse&theme=light)
+![Tech stack](https://skillicons.dev/icons?i=py,pytorch,django,flask,fastapi,java,spring,html,css,bootstrap,js,postgres,mysql,docker,git,github,gcp,vscode,pycharm,idea,eclipse&theme=light)
