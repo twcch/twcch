@@ -10,7 +10,7 @@
 
 ## Skills
 
-![Tech stack](https://skillicons.dev/icons?i=py,pytorch,tensorflow,django,flask,fastapi,java,spring,html,css,bootstrap,js,postgres,mysql,docker,git,github,gcp,linux,vscode,pycharm,idea,eclipse&theme=light)
+![Tech stack](https://skillicons.dev/icons?i=py,pytorch,tensorflow,django,flask,fastapi,java,spring,postgres,mysql,docker,git,github,gcp,linux,html,css,bootstrap,js,vuejs,vscode,pycharm,idea,eclipse&theme=light)
 
 ## Links
 
