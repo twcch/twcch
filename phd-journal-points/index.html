@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" data-bs-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>期刊點數 — 博士班點數計算器</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+:root {
+  --ink:    #08080a;
+  --panel:  #101013;
+  --panel2: #17171c;
+  --line:   #2c2c34;
+  --line-2: #43434f;
+  --text:   #f2f2ef;
+  --muted:  #7d7d8a;
+  --acid:   #ccff00;
+  --acid-d: #a3cc00;
+  --hot:    #ff3b30;
+
+  --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, "Roboto Mono", monospace;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang TC",
+          "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+}
+
+* { border-radius: 0 !important; }
+
+body {
+  background: var(--ink);
+  color: var(--text);
+  font-family: var(--sans);
+  -webkit-font-smoothing: antialiased;
+  background-image:
+    linear-gradient(var(--panel) 1px, transparent 1px),
+    linear-gradient(90deg, var(--panel) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+.wrap { max-width: 1180px; margin: 0 auto; padding: 0 1.25rem; }
+
+/* ── 標題列 ───────────────────────────── */
+.masthead { border-bottom: 3px solid var(--text); padding: 2.25rem 0 1.1rem; margin-bottom: 0; }
+.masthead h1 {
+  font-size: clamp(2.1rem, 6.5vw, 4.25rem);
+  font-weight: 900; letter-spacing: -.05em; line-height: .95; margin: 0;
+}
+.masthead h1 em { font-style: normal; color: var(--acid); }
+.kicker {
+  font-family: var(--mono); font-size: .7rem; letter-spacing: .22em;
+  text-transform: uppercase; color: var(--muted); margin-bottom: .85rem;
+}
+.masthead .sub { color: var(--muted); margin: .9rem 0 0; font-size: .95rem; max-width: 46ch; }
+
+/* ── 合計 ─────────────────────────────── */
+.hero { display: grid; grid-template-columns: 1.35fr 1fr; border-bottom: 3px solid var(--text); }
+@media (max-width: 820px) { .hero { grid-template-columns: 1fr; } }
+
+.hero-total { background: var(--acid); color: #000; padding: 2rem 2rem 1.6rem; }
+.hero-total .label {
+  font-family: var(--mono); font-size: .7rem; letter-spacing: .22em;
+  text-transform: uppercase; opacity: .62; margin-bottom: .3rem;
+}
+.total-num {
+  font-family: var(--mono); font-weight: 700;
+  font-size: clamp(3.6rem, 13vw, 7.5rem);
+  letter-spacing: -.055em; line-height: .88; font-variant-numeric: tabular-nums;
+  word-break: break-all;
+}
+.total-meta { font-size: .82rem; font-weight: 600; opacity: .68; margin-top: .55rem; }
+
+.hero-goal {
+  background: var(--panel); padding: 2rem; border-left: 3px solid var(--text);
+  display: flex; flex-direction: column; justify-content: center;
+}
+@media (max-width: 820px) { .hero-goal { border-left: 0; border-top: 3px solid var(--text); } }
+.hero-goal .label {
+  font-family: var(--mono); font-size: .7rem; letter-spacing: .22em;
+  text-transform: uppercase; color: var(--muted);
+}
+
+/* 分段進度條 */
+.seg { display: flex; gap: 3px; height: 30px; margin: 1rem 0 .75rem; }
+.seg i { flex: 1; background: var(--line); transition: background .18s; }
+.seg i.on   { background: var(--text); }   /* 進行中 */
+.seg i.over { background: var(--acid); }   /* 已達門檻 */
+.goal-msg { font-family: var(--mono); font-size: .82rem; color: var(--muted); }
+.goal-msg b { color: var(--text); font-weight: 700; }
+.goal-msg.done { color: var(--acid); }
+.goal-msg.done b { color: var(--acid); }
+
+/* ── 區塊 ─────────────────────────────── */
+.slab { border-bottom: 3px solid var(--text); }
+.slab-head {
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: .75rem; padding: 1.15rem 0 1rem;
+}
+.slab-head h2 {
+  font-size: 1rem; font-weight: 800; letter-spacing: .02em; margin: 0;
+  display: flex; align-items: baseline; gap: .6rem;
+}
+.slab-head h2 span {
+  font-family: var(--mono); font-size: .68rem; color: var(--acid);
+  letter-spacing: .18em; font-weight: 400;
+}
+
+/* ── 按鈕 ─────────────────────────────── */
+.bx {
+  font-family: var(--mono); font-size: .72rem; letter-spacing: .1em;
+  text-transform: uppercase; font-weight: 600;
+  background: transparent; color: var(--text);
+  border: 2px solid var(--line-2); padding: .5rem .85rem;
+  cursor: pointer; transition: background .12s, color .12s, border-color .12s;
+}
+.bx:hover  { background: var(--text); color: #000; border-color: var(--text); }
+.bx:focus-visible { outline: 3px solid var(--acid); outline-offset: 2px; }
+.bx.acid   { background: var(--acid); border-color: var(--acid); color: #000; }
+.bx.acid:hover { background: var(--text); border-color: var(--text); }
+.bx.warn:hover { background: var(--hot); border-color: var(--hot); color: #fff; }
+
+/* ── 表格 ─────────────────────────────── */
+table.grid { width: 100%; border-collapse: collapse; }
+table.grid thead th {
+  font-family: var(--mono); font-size: .66rem; letter-spacing: .16em;
+  text-transform: uppercase; color: var(--muted); font-weight: 500;
+  text-align: left; padding: .6rem .75rem; border-bottom: 2px solid var(--line-2);
+  white-space: nowrap;
+}
+table.grid tbody td { padding: .55rem .75rem; border-bottom: 1px solid var(--line); vertical-align: middle; }
+table.grid tbody tr:hover td { background: var(--panel); }
+
+.idx { font-family: var(--mono); font-size: 1.15rem; color: var(--line-2); font-weight: 700; width: 3.4rem; }
+tr:hover .idx { color: var(--acid); }
+
+/* 輸入：底線式，不是方框 */
+.inp {
+  width: 100%; background: transparent; color: var(--text);
+  border: 0; border-bottom: 2px solid var(--line);
+  padding: .4rem .1rem; font-family: var(--mono); font-size: .95rem;
+  transition: border-color .15s;
+}
+.inp:focus { outline: 0; border-bottom-color: var(--acid); }
+.inp::placeholder { color: #4a4a55; }
+.inp.name { font-family: var(--sans); font-size: .95rem; min-width: 11rem; }
+.inp.num  { width: 5.5rem; text-align: center; }
+/* 隱藏 number 的上下箭頭，維持乾淨的等寬外觀 */
+.inp.num::-webkit-outer-spin-button, .inp.num::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+.inp.num { -moz-appearance: textfield; }
+
+.out { text-align: right; white-space: nowrap; width: 10.5rem; }
+.pts {
+  font-family: var(--mono); font-size: 1.45rem; font-weight: 700;
+  letter-spacing: -.02em; font-variant-numeric: tabular-nums; line-height: 1.1;
+}
+.share { font-family: var(--mono); font-size: .68rem; color: var(--muted); margin-top: .1rem; }
+/* 佔比視覺化：實際點數下方的細長條 */
+.sharebar { height: 3px; background: var(--line); margin-top: .35rem; }
+.sharebar i { display: block; height: 100%; background: var(--acid); }
+
+tr.bad .pts   { font-size: .78rem; font-weight: 600; color: var(--hot); letter-spacing: 0; }
+tr.bad .inp   { border-bottom-color: var(--hot); }
+tr.bad .sharebar { display: none; }
+tr.empty .pts { color: var(--line-2); }
+tr.empty .sharebar { display: none; }
+
+.del {
+  background: transparent; border: 0; color: var(--line-2);
+  font-family: var(--mono); font-size: 1rem; cursor: pointer; padding: .2rem .45rem;
+}
+.del:hover { color: var(--hot); }
+
+/* ── 公式 ─────────────────────────────── */
+.formula {
+  background: var(--panel); border-left: 5px solid var(--acid);
+  padding: 1.6rem 1.75rem; font-size: clamp(1rem, 2.6vw, 1.4rem);
+  font-family: var(--mono); line-height: 2.2; overflow-x: auto;
+}
+.formula .v { color: var(--acid); }
+.frac { display: inline-block; text-align: center; vertical-align: middle; margin: 0 .3rem; }
+.frac .n { display: block; padding: 0 .5rem; }
+.frac .d { display: block; padding: .1rem .5rem 0; border-top: 2px solid currentColor; }
+
+.notes { list-style: none; padding: 0; margin: 1.4rem 0 0; }
+.notes li {
+  color: var(--muted); font-size: .88rem; line-height: 1.65;
+  padding: .5rem 0 .5rem 2.2rem; position: relative; border-top: 1px solid var(--line);
+}
+.notes li::before {
+  content: attr(data-i); position: absolute; left: 0; top: .5rem;
+  font-family: var(--mono); font-size: .7rem; color: var(--acid);
+}
+.notes b { color: var(--text); }
+
+/* 權重分佈長條 */
+.dist { display: flex; align-items: flex-end; gap: 6px; margin-top: 1rem; }
+.dist .b { flex: 1 1 0; display: flex; flex-direction: column; justify-content: flex-end; min-width: 0; }
+.dist .b i {
+  display: block; background: var(--acid); min-height: 3px;
+  transition: height .2s, opacity .2s;
+}
+.dist .b b {
+  font-family: var(--mono); font-size: .68rem; color: var(--text);
+  font-weight: 700; text-align: center; padding-top: .45rem;
+  border-top: 2px solid var(--line-2); margin-top: .3rem;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.dist .b em {
+  font-style: normal; display: block; font-family: var(--mono);
+  font-size: .6rem; color: var(--muted); text-align: center;
+  font-weight: 400; padding-top: .15rem;
+}
+
+.foot { color: var(--muted); font-size: .78rem; font-family: var(--mono); padding: 1.75rem 0 3rem; }
+
+/* ── 列印：翻成白底 ───────────────────── */
+@media print {
+  body { background: #fff !important; color: #000; background-image: none; }
+  .no-print { display: none !important; }
+  .hero-total { background: #fff; color: #000; border: 2px solid #000; }
+  .hero-goal, .formula, table.grid tbody tr:hover td { background: #fff; }
+  .masthead, .hero, .slab { border-color: #000 !important; }
+  .idx, .pts, .inp, .notes b, .masthead h1 em { color: #000 !important; }
+  .inp { border-bottom-color: #999; }
+}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <div class="kicker">NCKU · Ph.D. Journal Credits</div>
+    <h1>期刊點數<br><em>計算器</em></h1>
+    <p class="sub">依作者序加權，換算每篇論文可採計的實際點數。</p>
+  </header>
+
+  <!-- 合計 -->
+  <section class="hero">
+    <div class="hero-total">
+      <div class="label">實際點數合計 / Total</div>
+      <div class="total-num" id="total">0.0000</div>
+      <div class="total-meta" id="totalMeta">尚無資料</div>
+    </div>
+    <div class="hero-goal">
+      <div class="d-flex align-items-center justify-content-between gap-2">
+        <span class="label">畢業門檻</span>
+        <input type="number" class="inp num no-print" id="goal" min="0" step="0.5" placeholder="—"
+               aria-label="畢業門檻點數">
+      </div>
+      <div class="seg" id="seg" role="progressbar" aria-label="達成進度"></div>
+      <div class="goal-msg" id="goalMsg">設定門檻後顯示達成進度</div>
+    </div>
+  </section>
+
+  <!-- 論文列表 -->
+  <section class="slab">
+    <div class="slab-head">
+      <h2>論文列表 <span id="rowCount">00</span></h2>
+      <div class="d-flex gap-2 flex-wrap no-print">
+        <button class="bx" id="btnSample">範例</button>
+        <button class="bx" id="btnExport">CSV</button>
+        <button class="bx" id="btnPrint">列印</button>
+        <button class="bx warn" id="btnClear">清除</button>
+      </div>
+    </div>
+
+    <div class="table-responsive">
+      <table class="grid">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>論文 / 期刊名稱</th>
+            <th>原始點數</th>
+            <th>第 N 位</th>
+            <th>共 M 位</th>
+            <th class="text-end">實際點數</th>
+            <th class="no-print"></th>
+          </tr>
+        </thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+
+    <div class="py-3 no-print d-flex align-items-center gap-3 flex-wrap">
+      <button class="bx acid" id="btnAdd">＋ 新增一列</button>
+      <span class="goal-msg">最後一列按 Enter 也可新增</span>
+    </div>
+  </section>
+
+  <!-- 公式 -->
+  <section class="slab">
+    <div class="slab-head">
+      <h2>計算方式 <span>FORMULA</span></h2>
+      <button class="bx no-print" type="button" data-bs-toggle="collapse" data-bs-target="#fx">展開 / 收合</button>
+    </div>
+    <div class="collapse show" id="fx">
+      <div class="pb-4">
+        <div class="formula">
+          實際點數 = <span class="v">原始點數</span> ×
+          <span class="frac">
+            <span class="n">2<sup>−(<span class="v">N</span>−1)</sup></span>
+            <span class="d">2 × (1 − 2<sup>−<span class="v">M</span></sup>)</span>
+          </span>
+        </div>
+
+        <ul class="notes">
+          <li data-i="01"><b>N</b> = 你是第幾位作者　<b>M</b> = 這篇論文共有幾位作者</li>
+          <li data-i="02">第 k 位作者的權重為 <b>2<sup>−(k−1)</sup></b>，即 1、½、¼、⅛ …… 逐位減半。</li>
+          <li data-i="03">分母 <b>2 × (1 − 2<sup>−M</sup>)</b> 正好是全部 M 位作者的權重總和，用來歸一化。</li>
+          <li data-i="04">因此同一篇論文所有作者的實際點數加起來，<b>剛好等於原始點數</b>。</li>
+        </ul>
+
+        <div class="pt-4">
+          <div class="d-flex align-items-center gap-3 flex-wrap">
+            <span class="label kicker mb-0">權重分佈</span>
+            <div class="d-flex align-items-center gap-2">
+              <span class="goal-msg">M =</span>
+              <input type="number" class="inp num" id="demoM" value="4" min="1" max="16" aria-label="作者總數">
+            </div>
+          </div>
+          <div class="dist" id="dist"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <p class="foot">資料只存在這台裝置的瀏覽器 localStorage，不會上傳。</p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+(function () {
+  "use strict";
+
+  var STORE_KEY = "phd-journal-points";
+  var tbody   = document.getElementById("rows");
+  var goalInp = document.getElementById("goal");
+
+  var SAMPLE = [
+    { name: "", base: 4, n: 1, m: 1 },
+    { name: "", base: 4, n: 2, m: 4 },
+    { name: "", base: 4, n: 1, m: 4 },
+    { name: "", base: 4, n: 3, m: 8 },
+    { name: "", base: 3, n: 4, m: 5 }
+  ];
+
+  /* ---------- 核心計算 ---------- */
+
+  // 第 k 位作者的權重：2^-(k-1)
+  function weight(k) {
+    return Math.pow(2, -(k - 1));
+  }
+
+  // M 位作者的權重總和：2 * (1 - 2^-M)
+  function weightSum(m) {
+    return 2 * (1 - Math.pow(2, -m));
+  }
+
+  // 實際點數 = 原始點數 * 2^-(N-1) / (2 * (1 - 2^-M))
+  function actualPoints(base, n, m) {
+    return base * weight(n) / weightSum(m);
+  }
+
+  function validate(base, n, m) {
+    if (!isFinite(base) || !isFinite(n) || !isFinite(m)) return "資料不完整";
+    if (base < 0)                                        return "點數不可為負";
+    if (n < 1 || m < 1)                                  return "作者序需 ≥ 1";
+    if (n !== Math.floor(n) || m !== Math.floor(m))      return "作者序需為整數";
+    if (n > m)                                           return "N 不可大於 M";
+    return null;
+  }
+
+  function fmt(x, d) {
+    d = d === undefined ? 4 : d;
+    return x.toLocaleString("en-US", { minimumFractionDigits: d, maximumFractionDigits: d });
+  }
+
+  function esc(v) {
+    return String(v === null || v === undefined ? "" : v).replace(/"/g, "&quot;");
+  }
+
+  /* ---------- 列 ---------- */
+
+  function addRow(data) {
+    data = data || { name: "", base: "", n: "", m: "" };
+    var tr = document.createElement("tr");
+    tr.innerHTML =
+      '<td class="idx"></td>' +
+      '<td><input type="text" class="inp name f-name" placeholder="（選填）" value="' + esc(data.name) + '"></td>' +
+      '<td><input type="number" class="inp num f-base" min="0" step="0.5" placeholder="—" value="' + esc(data.base) + '"></td>' +
+      '<td><input type="number" class="inp num f-n" min="1" step="1" placeholder="N" value="' + esc(data.n) + '"></td>' +
+      '<td><input type="number" class="inp num f-m" min="1" step="1" placeholder="M" value="' + esc(data.m) + '"></td>' +
+      '<td class="out">' +
+        '<div class="pts">—</div><div class="share"></div>' +
+        '<div class="sharebar"><i style="width:0"></i></div>' +
+      '</td>' +
+      '<td class="no-print text-center"><button class="del" title="刪除這一列" aria-label="刪除這一列">✕</button></td>';
+    tbody.appendChild(tr);
+    return tr;
+  }
+
+  function readRow(tr) {
+    return {
+      name: tr.querySelector(".f-name").value,
+      base: parseFloat(tr.querySelector(".f-base").value),
+      n:    parseFloat(tr.querySelector(".f-n").value),
+      m:    parseFloat(tr.querySelector(".f-m").value)
+    };
+  }
+
+  function recalc() {
+    var trs = tbody.querySelectorAll("tr");
+    var total = 0, counted = 0;
+
+    trs.forEach(function (tr, i) {
+      var v   = readRow(tr);
+      var err = validate(v.base, v.n, v.m);
+      var pts = tr.querySelector(".pts");
+      var shr = tr.querySelector(".share");
+      var bar = tr.querySelector(".sharebar i");
+
+      tr.querySelector(".idx").textContent = String(i + 1).padStart(2, "0");
+
+      var blank = tr.querySelector(".f-base").value === "" &&
+                  tr.querySelector(".f-n").value === "" &&
+                  tr.querySelector(".f-m").value === "";
+
+      if (err) {
+        tr.classList.toggle("bad", !blank);
+        tr.classList.toggle("empty", blank);
+        pts.textContent = blank ? "—" : err;
+        pts.removeAttribute("title");
+        shr.textContent = "";
+        bar.style.width = "0";
+        return;
+      }
+
+      tr.classList.remove("bad", "empty");
+      var p     = actualPoints(v.base, v.n, v.m);
+      var share = weight(v.n) / weightSum(v.m);
+
+      pts.textContent = fmt(p);
+      pts.title = "精確值：" + p;
+      shr.textContent = "佔全篇 " + fmt(share * 100, 1) + "%";
+      bar.style.width = (share * 100) + "%";
+
+      total += p;
+      counted++;
+    });
+
+    document.getElementById("total").textContent = fmt(total);
+    document.getElementById("rowCount").textContent = String(trs.length).padStart(2, "0");
+    document.getElementById("totalMeta").textContent = counted
+      ? counted + " 篇有效" + (trs.length > counted ? " · " + (trs.length - counted) + " 列未完成" : "")
+      : "尚無資料";
+
+    updateGoal(total);
+    save();
+  }
+
+  /* ---------- 門檻進度（20 格分段條） ---------- */
+
+  var SEGS = 20;
+  var segEl = document.getElementById("seg");
+  for (var s = 0; s < SEGS; s++) segEl.appendChild(document.createElement("i"));
+
+  function updateGoal(total) {
+    var goal = parseFloat(goalInp.value);
+    var bars = segEl.children;
+    var msg  = document.getElementById("goalMsg");
+
+    if (!isFinite(goal) || goal <= 0) {
+      for (var i = 0; i < SEGS; i++) bars[i].className = "";
+      segEl.removeAttribute("aria-valuenow");
+      msg.className = "goal-msg";
+      msg.textContent = "設定門檻後顯示達成進度";
+      return;
+    }
+
+    var pct  = total / goal * 100;
+    var lit  = Math.min(Math.round(pct / 100 * SEGS), SEGS);
+    var done = total >= goal;
+
+    for (var j = 0; j < SEGS; j++) bars[j].className = j < lit ? (done ? "over" : "on") : "";
+    segEl.setAttribute("aria-valuenow", fmt(pct, 1));
+
+    if (done) {
+      msg.className = "goal-msg done";
+      msg.innerHTML = "已達成 · 超出 <b>" + fmt(total - goal) + "</b> 點（" + fmt(pct, 1) + "%）";
+    } else {
+      msg.className = "goal-msg";
+      msg.innerHTML = "尚差 <b>" + fmt(goal - total) + "</b> 點（" + fmt(pct, 1) + "%）";
+    }
+  }
+
+  /* ---------- 權重分佈 ---------- */
+
+  function renderDist() {
+    var m   = parseInt(document.getElementById("demoM").value, 10);
+    var box = document.getElementById("dist");
+    box.innerHTML = "";
+    if (!isFinite(m) || m < 1 || m > 16) {
+      box.innerHTML = '<div class="goal-msg">請輸入 1–16</div>';
+      return;
+    }
+    var sum = weightSum(m);
+    var top = weight(1) / sum;                       // 以第一作者為高度基準
+    for (var k = 1; k <= m; k++) {
+      var share = weight(k) / sum;
+      var b = document.createElement("div");
+      b.className = "b";
+      b.title = "第 " + k + " 位作者：" + fmt(share * 100, 2) + "%";
+      // 高度依權重比例，顏色隨作者序遞減淡出
+      b.innerHTML =
+        '<i style="height:' + (share / top * 90) + 'px; opacity:' +
+              Math.max(1 - (k - 1) * 0.13, 0.25) + '"></i>' +
+        "<b>" + fmt(share * 100, share * 100 < 10 ? 1 : 0) + "%</b>" +
+        "<em>第 " + k + " 位</em>";
+      box.appendChild(b);
+    }
+  }
+
+  /* ---------- 儲存 / 讀取 ---------- */
+
+  function save() {
+    try {
+      var data = [];
+      tbody.querySelectorAll("tr").forEach(function (tr) {
+        data.push({
+          name: tr.querySelector(".f-name").value,
+          base: tr.querySelector(".f-base").value,
+          n:    tr.querySelector(".f-n").value,
+          m:    tr.querySelector(".f-m").value
+        });
+      });
+      localStorage.setItem(STORE_KEY, JSON.stringify({ rows: data, goal: goalInp.value }));
+    } catch (e) { /* 隱私模式下不可用，忽略 */ }
+  }
+
+  function load() {
+    try {
+      var raw = localStorage.getItem(STORE_KEY);
+      if (!raw) return false;
+      var data = JSON.parse(raw);
+      if (!data || !data.rows || !data.rows.length) return false;
+      data.rows.forEach(addRow);
+      goalInp.value = data.goal || "";
+      return true;
+    } catch (e) { return false; }
+  }
+
+  /* ---------- 匯出 ---------- */
+
+  function exportCsv() {
+    var lines = ["論文/期刊名稱,原始點數,第N位作者,共M位作者,權重佔比(%),實際點數"];
+    var total = 0;
+
+    tbody.querySelectorAll("tr").forEach(function (tr) {
+      var v = readRow(tr);
+      if (validate(v.base, v.n, v.m)) return;
+      var p = actualPoints(v.base, v.n, v.m);
+      total += p;
+      lines.push([
+        '"' + v.name.replace(/"/g, '""') + '"',
+        v.base, v.n, v.m,
+        (weight(v.n) / weightSum(v.m) * 100).toFixed(2),
+        p.toFixed(6)
+      ].join(","));
+    });
+
+    lines.push('"合計",,,,,' + total.toFixed(6));
+
+    // 前置 BOM，讓 Excel 正確辨識 UTF-8 中文
+    var blob = new Blob(["\ufeff" + lines.join("\r\n")], { type: "text/csv;charset=utf-8;" });
+    var a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "期刊點數.csv";
+    a.click();
+    URL.revokeObjectURL(a.href);
+  }
+
+  /* ---------- 事件 ---------- */
+
+  tbody.addEventListener("input", recalc);
+
+  tbody.addEventListener("click", function (e) {
+    if (!e.target.classList.contains("del")) return;
+    e.target.closest("tr").remove();
+    if (!tbody.children.length) addRow();
+    recalc();
+  });
+
+  tbody.addEventListener("keydown", function (e) {
+    if (e.key !== "Enter") return;
+    e.preventDefault();
+    var tr = e.target.closest("tr");
+    if (tr === tbody.lastElementChild) {
+      addRow();
+      recalc();
+    }
+    tbody.children[Array.prototype.indexOf.call(tbody.children, tr) + 1]
+         .querySelector(".f-name").focus();
+  });
+
+  document.getElementById("btnAdd").addEventListener("click", function () {
+    addRow();
+    recalc();
+    tbody.lastElementChild.querySelector(".f-name").focus();
+  });
+
+  document.getElementById("btnSample").addEventListener("click", function () {
+    if (!confirm("載入範例會覆蓋目前的資料，確定嗎？")) return;
+    tbody.innerHTML = "";
+    SAMPLE.forEach(addRow);
+    recalc();
+  });
+
+  document.getElementById("btnClear").addEventListener("click", function () {
+    if (!confirm("確定要清除全部資料？")) return;
+    tbody.innerHTML = "";
+    addRow();
+    goalInp.value = "";
+    recalc();
+  });
+
+  document.getElementById("btnExport").addEventListener("click", exportCsv);
+  document.getElementById("btnPrint").addEventListener("click", function () { window.print(); });
+  goalInp.addEventListener("input", recalc);
+  document.getElementById("demoM").addEventListener("input", renderDist);
+
+  /* ---------- 啟動 ---------- */
+
+  if (!load()) addRow();
+  renderDist();
+  recalc();
+})();
+</script>
+</body>
+</html>
