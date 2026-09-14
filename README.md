@@ -13,10 +13,10 @@
 
 ![Python](https://api.iconify.design/skill-icons/python-light.svg?width=48)
 ![PyTorch](https://api.iconify.design/skill-icons/pytorch-light.svg?width=48)
-![LangChain](https://api.iconify.design/simple-icons/langchaincorporate.svg?width=48)
 ![FastAPI](https://api.iconify.design/skill-icons/fastapi.svg?width=48)
 ![Flask](https://api.iconify.design/skill-icons/flask-light.svg?width=48)
 ![Django](https://api.iconify.design/skill-icons/django.svg?width=48)
+![LangChain](https://api.iconify.design/simple-icons/langchaincorporate.svg?width=48)
 ![Java](https://api.iconify.design/skill-icons/java-light.svg?width=48)
 ![Spring](https://api.iconify.design/skill-icons/spring-light.svg?width=48)
 ![Neo4j](https://api.iconify.design/devicon/neo4j.svg?width=48)
