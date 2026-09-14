@@ -5,7 +5,7 @@
 ## About Me
 
 - Ph.D. candidate at National Cheng Kung University, Taiwan
-- Specialty: Deep Learning, Time Series Forecasting
+- Specialty: Machine Learning, Deep Learning, Time Series Forecasting
 
 ## Skills
 
