@@ -5,8 +5,8 @@
 ## About Me
 
 - Ph.D. candidate at National Cheng Kung University, Taiwan
-- Research focus: Time Series AI, Spatiotemporal AI, Multimodal AI
-- Specialty: Time Series Forecasting, Natural Language Processing, Large Language Models
+- Specialty: Deep Learning, Time Series Forecasting
+- Publications: [Google Scholar](https://scholar.google.com/citations?user=2j9pnMcAAAAJ)
 
 ## Skills
 
